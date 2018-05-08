@@ -1,0 +1,7 @@
+@function fontSize($fontSizeMapKey) {
+  @if map-has-key($fontSizesMap, $fontSizeMapKey) {
+    @return map-get($fontSizesMap, $fontSizeMapKey);
+  } @else {
+    @error "The key #{$fontSizeMapKey} does not exist in $fontSizesMap.";
+  }
+}

@@ -1,0 +1,239 @@
+//BTN
+$btn--flexPositioning: (
+  justifyContent: center,
+  alignItems    : center,
+  alignContent  : center
+)
+!default;
+$btn--font: (
+  fontSize: $mdFontSize
+)
+!default;
+$btn--text: (
+  color: $btnColor
+)
+!default;
+$btn--typography: ()
+!default;
+$btn--border: (
+  borderStyle : solid,
+  borderRadius: $btnBorderRadius,
+  borderWidth : $btnBorderWidth,
+  borderColor : $btnBgColor
+)
+!default;
+$btn--background: (
+  backgroundColor: $btnBgColor
+)
+!default;
+$btn--sizes: (
+  minWidth: $btnMinWidth
+)
+!default;
+$btn--padding: (
+  topBottom: $mdPaddingTopBottom,
+  leftRight: $mdPaddingLeftRight
+)
+!default;
+//hover and focus
+$btnPhover--font: ()
+!default;
+$btnPhover--text: ()
+!default;
+$btnPhover--border: ()
+!default;
+$btnPhover--background: (
+  backgroundColor: lighten($btnBgColor, 10%)
+)
+!default;
+$btnPhover--transform: "" !default;
+//focus
+$btnPactive--font: ()
+!default;
+$btnPactive--text: ()
+!default;
+$btnPactive--border: ()
+!default;
+$btnPactive--background: (
+  backgroundColor: $btnBgColor
+)
+!default;
+$btnPactive--transform: "" !default;
+
+// primary
+$btn_primary--font: ()
+!default;
+$btn_primary--text: (
+  color: $btnColor
+)
+!default;
+$btn_primary--typography: ()
+!default;
+$btn_primary--border: (
+  borderStyle : solid,
+  borderRadius: $btnBorderRadius,
+  borderWidth : $btnBorderWidth,
+  borderColor : $btnBgColorPrimary
+)
+!default;
+$btn_primary--background: (
+  backgroundColor: $btnBgColorPrimary
+)
+!default;
+//hover and focus
+$btn_primaryPhover--font: ()
+!default;
+$btn_primaryPhover--text: ()
+!default;
+$btn_primaryPhover--border: ()
+!default;
+$btn_primaryPhover--background: (
+  backgroundColor: lighten($btnBgColorPrimary, 10%)
+)
+!default;
+$btn_primaryPhover--transform: "" !default;
+//focus & active
+$btn_primaryPactive--font: ()
+!default;
+$btn_primaryPactive--text: ()
+!default;
+$btn_primaryPactive--border: ()
+!default;
+$btn_primaryPactive--background: (
+  backgroundColor: $btnBgColorPrimary
+)
+!default;
+$btn_primaryPactive--transform: "" !default;
+
+//secondary
+$btn_secondary--font: ()
+!default;
+$btn_secondary--text: (
+  color: $btnColor
+)
+!default;
+$btn_secondary--typography: ()
+!default;
+$btn_secondary--border: (
+  borderStyle : solid,
+  borderRadius: $btnBorderRadius,
+  borderWidth : $btnBorderWidth,
+  borderColor : $btnBgColorSecondary
+)
+!default;
+$btn_secondary--background: (
+  backgroundColor: $btnBgColorSecondary
+)
+!default;
+//hover and focus
+$btn_secondaryPhover--font: ()
+!default;
+$btn_secondaryPhover--text: ()
+!default;
+$btn_secondaryPhover--border: ()
+!default;
+$btn_secondaryPhover--background: (
+  backgroundColor: lighten($btnBgColorSecondary, 10%)
+)
+!default;
+$btn_secondaryPhover--transform: "" !default;
+//focus
+$btn_secondaryPactive--font: ()
+!default;
+$btn_secondaryPactive--text: ()
+!default;
+$btn_secondaryPactive--border: ()
+!default;
+$btn_secondaryPactive--background: (
+  backgroundColor: $btnBgColorSecondary
+)
+!default;
+$btn_secondaryPactive--transform: "" !default;
+
+//tertiary
+$btn_tertiary--font: ()
+!default;
+$btn_tertiary--text: (
+  color: $btnColor
+)
+!default;
+$btn_tertiary--typography: ()
+!default;
+$btn_tertiary--border: (
+  borderStyle : solid,
+  borderRadius: $btnBorderRadius,
+  borderWidth : $btnBorderWidth,
+  borderColor : $btnBgColorTertiary
+)
+!default;
+$btn_tertiary--background: (
+  backgroundColor: $btnBgColorTertiary
+)
+!default;
+//hover and focus
+$btn_tertiaryPhover--font: ()
+!default;
+$btn_tertiaryPhover--text: ()
+!default;
+$btn_tertiaryPhover--border: ()
+!default;
+$btn_tertiaryPhover--background: (
+  backgroundColor: lighten($btnBgColorTertiary, 10%)
+)
+!default;
+$btn_tertiaryPhover--transform: "" !default;
+//focus
+$btn_tertiaryPactive--font: ()
+!default;
+$btn_tertiaryPactive--text: ()
+!default;
+$btn_tertiaryPactive--border: (
+  borderColor: $btnBgColorTertiary
+)
+!default;
+$btn_tertiaryPactive--background: (
+  backgroundColor: $btnBgColorTertiary
+)
+!default;
+$btn_tertiaryPactive--transform: "" !default;
+
+//SIZES
+$btn_xs--font: (
+  fontSize: $mdFontSize * $xs
+)
+!default;
+$btn_xs--padding: (
+  topBottom: $mdPaddingTopBottom * $xs,
+  leftRight: $mdPaddingLeftRight * $xs
+)
+!default;
+
+$btn_sm--font: (
+  fontSize: $mdFontSize * $sm
+)
+!default;
+$btn_sm--padding: (
+  topBottom: $mdPaddingTopBottom * $sm,
+  leftRight: $mdPaddingLeftRight * $sm
+)
+!default;
+
+$btn_lg--font: (
+  fontSize: $mdFontSize * $lg
+)
+!default;
+$btn_lg--padding: (
+  topBottom: $mdPaddingTopBottom * $lg,
+  leftRight: $mdPaddingLeftRight * $lg
+)
+!default;
+
+$btn_xl--font: (
+  fontSize: $mdFontSize * $xl
+)
+!default;
+$btn_xl--padding: (
+  topBottom: $mdPaddingTopBottom * $xl,
+  leftRight: $mdPaddingLeftRight * $xl
+)
+!default;

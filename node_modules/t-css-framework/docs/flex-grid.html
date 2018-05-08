@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>T - css framework | Flex grid</title>
+  <link rel="stylesheet" type="text/css" href="t-css-framework.css">
+  <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+
+<body>
+  <header class="main-nav">
+    <div class="container container_boxed">
+      <div class="row">
+        <div class="col col_16">
+          <h1>t: flex grid</h1>
+        </div>
+        <div class="col col_8 text-right">
+          <a href="https://github.com/DavideTriso/t-css-framework" class="back-link">&larr; Go to readme</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col col_24 col_text">
+          <h2>Example 1: default container, row and cols</h2>
+        </div>
+        <div class="col col_24 col_w1-12 col_w3-6 col_colored">
+          <div>
+            col col_24 col_w1-12 col_w3-6
+          </div>
+        </div>
+        <div class="col col_24 col_w1-12 col_w3-6 col_colored">
+          <div>
+            col col_24 col_w1-12 col_w3-6
+          </div>
+        </div>
+        <div class="col col_24 col_w1-24 col_w3-12 col_colored">
+          <div>
+            col col_24 col_w1-24 col_w3-12
+          </div>
+        </div>
+        <div class="col col_24 col_w1-24 col_w3-24 col_colored">
+          <div>
+            col col_24 col_w1-24 col_w3-24
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container container_boxed">
+      <div class="row">
+        <div class="col col_24 col_text">
+          <h2>Example 2: boxed container</h2>
+          <p>
+            Add class .container_boxed to transform container in a boxed container
+          </p>
+        </div>
+        <div class="col col_24 col_w1-12 col_w3-6 col_colored">
+          <div>
+            col col_24 col_w1-12 col_w3-6
+          </div>
+        </div>
+        <div class="col col_24 col_w1-12 col_w3-6 col_colored">
+          <div>
+            col col_24 col_w1-12 col_w3-6
+          </div>
+        </div>
+        <div class="col col_24 col_w1-24 col_w3-12 col_colored">
+          <div>
+            col col_24 col_w1-24 col_w3-12
+          </div>
+        </div>
+        <div class="col col_24 col_w1-24 col_w3-24 col_colored">
+          <div>
+            col col_24 col_w1-24 col_w3-24
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container container_boxed container_gutter">
+      <div class="row row_gutter">
+        <div class="col col_24 col_gutter col_text">
+          <h2>Example 3: Boxed container and gutters</h2>
+          <p>
+            Add classes .container_gutter, .row_gutter and .col_gutter to apply gutters. For small gutters use the modifiers .XX_gutter-small; for large gutters use the modifiers .XX_gutter-large
+          </p>
+        </div>
+        <div class="col col_24 col_w1-12 col_w3-6 col_colored col_gutter">
+          <div>
+            col col_24 col_w1-12 col_w3-6 col_gutter
+          </div>
+        </div>
+        <div class="col col_24 col_w1-12 col_w3-6 col_colored col_gutter">
+          <div>
+            col col_24 col_w1-12 col_w3-6 col_gutter
+          </div>
+        </div>
+        <div class="col col_24 col_w1-24 col_w3-12 col_colored col_gutter">
+          <div>
+            col col_24 col_w1-24 col_w3-12 col_gutter
+          </div>
+        </div>
+        <div class="col col_24 col_w1-24 col_w3-24 col_colored col_gutter">
+          <div>
+            col col_24 col_w1-24 col_w3-24 col_gutter
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container container_boxed container_gutter container_w0-gutter-reset">
+      <div class="row row_gutter row_w0-gutter-reset">
+        <div class="col col_24 col_gutter col_text">
+          <h2>Example 4: Responsive reset gutters</h2>
+          <p>
+            Add classes .container_wX-gutter-reset, .row_wX-gutter-reset and .col_wX-gutter-reset to reset gutter between two specific breakpoints. By default the framework generates the classes to reset gutters between w0 - w3, w3 - w5 and from w5 and up.
+          </p>
+        </div>
+        <div class="col col_24 col_w1-12 col_w3-6 col_colored col_gutter col_w0-gutter-reset">
+          <div>
+            col col_24 col_w1-12 col_w3-6 col_gutter col_w0-gutter-reset
+          </div>
+        </div>
+        <div class="col col_24 col_w1-12 col_w3-6 col_colored col_gutter col_w0-gutter-reset">
+          <div>
+            col col_24 col_w1-12 col_w3-6 col_gutter col_w0-gutter-reset
+          </div>
+        </div>
+        <div class="col col_24 col_w1-24 col_w3-12 col_colored col_gutter col_w0-gutter-reset">
+          <div>
+            col col_24 col_w1-24 col_w3-12 col_gutter col_w0-gutter-reset
+          </div>
+        </div>
+        <div class="col col_24 col_w1-24 col_w3-24 col_colored col_gutter col_w0-gutter-reset">
+          <div>
+            col col_24 col_w1-24 col_w3-24 col_gutter col_w0-gutter-reset
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row row_vcenter row_hcenter">
+        <div class="col col_24 col_text">
+          <h2>Example 5: Horizontally and vertically center row content</h2>
+          <p>
+            Use the classes .row_vcenter and .row_hcenter to vertically and horizontally center content in the row
+          </p>
+        </div>
+        <div class="col col_24 col_w1-12 col_w3-6 col_colored">
+          <div>
+            col col_24 col_w1-12 col_w3-6
+          </div>
+        </div>
+        <div class="col col_24 col_w1-12 col_w3-6 col_colored">
+          <div>
+            col col_24 col_w1-12 col_w3-6
+          </div>
+        </div>
+        <div class="col col_24 col_w1-24 col_w3-12 col_colored">
+          <div>
+            col col_24 col_w1-24 col_w3-12
+          </div>
+        </div>
+        <div class="col col_24 col_w1-18 col_w3-12 col_colored">
+          <div>
+            col col_24 col_w1-24 col_w3-24
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container container_boxed">
+      <div class="row">
+        <div class="col col_24 col_text">
+          <h2>Example 6: Offset cols</h2>
+          <p>
+            Use the classes .col_offset-X and .col_wX-offset-X to apply and offset to the cols. Use the classes .col_negative-offset-X and .col_wX-negative-offset-X to apply negative offset to the cols
+          </p>
+        </div>
+        <div class="col col_22 col_w1-10 col_w3-8 col_colored col_offset-1 col_w1-offset-2 col_w3-offset-4">
+          <div>
+            col col_22 col_w1-10 col_w3-8 col_offset-1 col_w1-offset-2 col_w3-offset-4
+          </div>
+        </div>
+        <div class="col col_24 col_w1-10 col_w3-8 col_colored">
+          <div>
+            col col_24 col_w1-10 col_w3-8
+          </div>
+        </div>
+        <div class="col col_24 col_w1-24 col_w3-16 col_w3-negative-offset-4 col_colored">
+          <div>
+            col col_24 col_w1-24 col_w3-16 col_w3-negative-offset-4
+          </div>
+        </div>
+        <div class="col col_24 col_w1-18 col_w3-12 col_colored">
+          <div>
+            col col_24 col_w1-18 col_w3-12
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

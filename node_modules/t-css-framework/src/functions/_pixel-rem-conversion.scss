@@ -1,0 +1,41 @@
+//-------------------------
+//CONVERT PIXEL INTO REM
+//-------------------------
+@function pxToRem($length, $htmlElementFontlength) {
+  $length: stripUnit($length);
+
+  @if $length < 0 {
+    $length: abs($length);
+    $htmlElementFontlength: stripUnit($htmlElementFontlength);
+    $remlength: -$length / $htmlElementFontlength;
+
+    @return $remlength + 0rem;
+  }
+  @else {
+    $htmlElementFontlength: stripUnit($htmlElementFontlength);
+    $remlength: $length / $htmlElementFontlength;
+
+    @return $remlength + 0rem;
+  }
+}
+
+//-------------------------
+//CONVERT REM INTO PIXEL
+//-------------------------
+@function remToPx($length, $htmlElementFontlength) {
+  $length: stripUnit($length);
+
+  @if $length < 0 {
+    $length: abs($length);
+    $htmlElementFontlength: stripUnit($htmlElementFontlength);
+    $pxlength: -$length * $htmlElementFontlength;
+
+    @return $pxlength + 0px;
+  }
+  @else {
+    $htmlElementFontlength: stripUnit($htmlElementFontlength);
+    $pxlength: $length * $htmlElementFontlength;
+
+    @return $pxlength + 0px;
+  }
+}

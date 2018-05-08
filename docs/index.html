@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>T core ui</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="t-core-ui.css" />
+</head>
+
+<body>
+  <h1>T CORE UI</h1>
+
+  <h2>Breadcrumb</h2>
+  <!--BREADCRUMB WITH HEADING -->
+  <nav class="breadcrumb" aria-labelledby="breadcrumb__heading--1">
+    <h2 class="breadcrumb__heading" id="breadcrumb__heading--1">You are here:</h2>
+    <ol class="breadcrumb__trail">
+      <li class="breadcrumb__item">
+        <a href="#" class="breadcrumb__link">Home</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a href="#" class="breadcrumb__link">UI components</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link breadcrumb__link_current" aria-current="page">Breadcrumb</a>
+      </li>
+    </ol>
+  </nav>
+
+  <!--BREADCRUMB WITHOUT HEADING -->
+  <nav class="breadcrumb">
+    <ol class="breadcrumb__trail">
+      <li class="breadcrumb__item">
+        <a href="#" class="breadcrumb__link">Home</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a href="#" class="breadcrumb__link">UI components</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link breadcrumb__link_current" aria-current="page">Breadcrumb</a>
+      </li>
+    </ol>
+  </nav>
+  <br />
+  <br />
+  <button class="btn" type="button">Button</button>
+  <button class="btn btn_primary" type="button">Button primary</button>
+  <button class="btn btn_secondary" type="button">Button secondary</button>
+  <button class="btn btn_tertiary" type="button">Button tertiary</button>
+  <br />
+  <br />
+  <button class="btn btn_primary" type="button">
+    <span class="btn__icon">&larr;</span>
+    <span class="btn__txt">Button with icon</span>
+  </button>
+
+  <button class="btn btn_primary" type="button">
+    <span class="btn__txt">Button with icon</span>
+    <span class="btn__icon">&rarr;</span>
+  </button>
+  <br />
+  <br />
+
+  <button class="btn btn_busy" type="button">
+    <span class="btn__txt">Button busy</span>
+    <span class="btn__icon">&rarr;</span>
+  </button>
+
+  <button class="btn btn_primary" type="button" disabled>
+    <span class="btn__txt">Button disabled</span>
+    <span class="btn__icon">&rarr;</span>
+  </button>
+  <br />
+  <br />
+
+
+  <!--SIZES-->
+  <button class="btn btn_primary btn_xs" type="button">
+    <span class="btn__txt">Button xs</span>
+    <span class="btn__icon">&rarr;</span>
+  </button>
+
+  <button class="btn btn_primary btn_sm" type="button">
+    <span class="btn__txt">Button sm</span>
+    <span class="btn__icon">&rarr;</span>
+  </button>
+
+  <button class="btn btn_primary" type="button">
+    <span class="btn__txt">Button (default - no modifier)</span>
+    <span class="btn__icon">&rarr;</span>
+  </button>
+
+  <button class="btn btn_primary btn_lg" type="button">
+    <span class="btn__txt">Button lg</span>
+    <span class="btn__icon">&rarr;</span>
+  </button>
+
+  <button class="btn btn_primary btn_xl" type="button">
+    <span class="btn__txt">Button xl</span>
+    <span class="btn__icon">&rarr;</span>
+  </button>
+  <br />
+  <br />
+  <button class="btn btn_primary btn_full" type="button">
+    Button full
+  </button>
+
+
+</body>
+
+</html>

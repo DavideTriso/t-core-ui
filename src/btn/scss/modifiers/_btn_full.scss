@@ -1,0 +1,3 @@
+.btn_full {
+  @include sizes((width: 100%, minWidth: 100%, maxWidth: none));
+}

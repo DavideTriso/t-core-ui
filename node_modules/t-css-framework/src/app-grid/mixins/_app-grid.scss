@@ -1,0 +1,20 @@
+@mixin generateAppGrid($appGridClassName, $appGridColumnsMap, $appGridRowsMap) {
+  $appGridColumns: null;
+  $appGridRows: null;
+
+  @each $key, $value in $appGridColumnsMap {
+    $appGridColumns: #{$appGridColumns} unquote("[#{$key}]") #{$value};
+  }
+
+  @each $key, $value in $appGridRows {
+    $appGridRows: #{$appGridRows} unquote("[#{$key}]") #{$value};
+  }
+
+  #{$appGridClassName} {
+    display: grid;
+    grid-template-columns: $appGridColumns;
+    grid-template-rows: $appGridRows;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+}

@@ -1,0 +1,4 @@
+.btn_lg {
+  @include padding($btn_lg--padding);
+  @include font($btn_lg--font);
+}

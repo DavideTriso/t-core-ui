@@ -1,0 +1,4 @@
+.btn_xs {
+  @include padding($btn_xs--padding);
+  @include font($btn_xs--font);
+}

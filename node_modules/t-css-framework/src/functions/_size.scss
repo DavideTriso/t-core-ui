@@ -1,0 +1,8 @@
+
+@function size($sizeMapKey) {
+  @if map-has-key($sizesMap, $sizeMapKey) {
+    @return map-get($sizesMap, $sizeMapKey);
+  } @else {
+    @error "The key #{$sizeMapKey} does not exist in $sizesMap.";
+  }
+}

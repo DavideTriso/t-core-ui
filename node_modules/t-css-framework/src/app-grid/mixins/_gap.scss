@@ -1,0 +1,60 @@
+//-------------------------
+//GENERATE RESPONSIVE GUTTER
+//Generate modifier classses to add responsive gap to the app-grid.
+//-------------------------
+@mixin generateResponsiveGap($breakpointsMap, $gapList, $appGridClassName, $gapModifierName, $columnOrRow) {
+  $i: 1;
+
+  @each $key, $value in $breakpointsMap {
+    @if $i == 1 {
+      #{$appGridClassName}#{$modifierSeparator}#{$gapModifierName} {
+        grid-#{$columnOrRow}-gap: nth($gapList, $i);
+      }
+    }
+    @else {
+      @media screen and (min-width: $value) {
+        #{$rowClassName}#{$modifierSeparator}#{$gutterModifierName} {
+          grid-#{$columnOrRow}-gap: nth($gapList, $i);
+        }
+      }
+    }
+
+    $i: $i + 1;
+  }
+}
+
+//-------------------------
+//RESET RESPONSIVE GAP
+// Generate modifier classes to reset app-grid's gap responsively
+//-------------------------
+@mixin responsiveGapReset($breakpointsMap, $appGridClassName, $resetGapModifierName) {
+  $i: 1;
+  $keys: map-values($breakpointsMap);
+  $l: length($keys);
+
+  @each $key, $value in $breakpointsMap {
+    @if $i == 1 {
+      @media screen and (max-width: nth($keys, $i + 1) - 1) {
+        #{$appGridClassName}#{$modifierSeparator}#{$key}-#{$resetGapModifierName} {
+          grid-#{$columnOrRow}-gap: 0;
+        }
+      }
+    }
+    @else if $i < $l {
+      @media screen and (min-width: $value) and (max-width: nth($keys, $i + 1) - 1) {
+        #{$appGridClassName}#{$modifierSeparator}#{$key}-#{$resetGapModifierName} {
+          grid-#{$columnOrRow}-gap: 0;
+        }
+      }
+    }
+    @else {
+      @media screen and (min-width: $value) {
+        #{$appGridClassName}#{$modifierSeparator}#{$key}-#{$resetGapModifierName} {
+          grid-#{$columnOrRow}-gap: 0;
+        }
+      }
+    }
+
+    $i: $i + 1;
+  }
+}

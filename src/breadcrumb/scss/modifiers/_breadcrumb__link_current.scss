@@ -1,0 +1,4 @@
+.breadcrumb__link_current {
+  @include font($breadcrumb__link_current--font);
+  @include text($breadcrumb__link_current--text);
+}

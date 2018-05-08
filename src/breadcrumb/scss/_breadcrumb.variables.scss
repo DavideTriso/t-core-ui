@@ -1,0 +1,58 @@
+//BLOCK
+$breadcrumb--flexPositioning: (
+  alignItems: center,
+  justifyContent: flex-start,
+) !default;
+$breadcrumb--padding: (
+  topBottom: 0.3rem,
+  leftRight: 0
+) !default;
+$breadcrumb--sizes: (
+  minWidth: 100%
+) !default;
+$breadcrumb--overflow-y: auto !default;
+$breadcrumb--white-space: nowrap !default;
+
+
+//ELEMENTS
+//HEADING
+$breadcrumb__heading--font: (
+  fontSize: 1rem,
+  fontWeight: 600
+) !default;
+$breadcrumb__heading--text: () !default;
+$breadcrumb__heading--padding: (all: 0) !default;
+$breadcrumb__heading--margin: (all: 0) !default;
+
+//TRAIL
+$breadcrumb__trail--flexPositioning: (
+  alignItems: center,
+  justifyContent: flex-start,
+) !default;
+
+
+//ITEM
+$breadcrumb__item--padding: (
+  left: 0.3rem
+) !default;
+$breadcrumb__item--sizes: (
+  width: 0.4rem,
+  height: 0.4rem
+) !default;
+$breadcrumb__item--border: (
+  borderWidth: 0 0.1rem 0.1rem 0,
+  borderStyle: solid,
+  borderColor: #000
+) !default;
+$breadcrumb__item--translate: translate(0 , -0.1rem) !default;
+
+//LINK
+$breadcrumb__link--font: () !default;
+$breadcrumb__link--text: (textDecoration: underline) !default;
+$breadcrumb__link--typography: () !default;
+$breadcrumb__linkPhover--font: () !default;
+$breadcrumb__linkPhover--text: (textDecoration: none) !default;
+
+//LINK CURRENT
+$breadcrumb__link_current--font: (fontWeight: 600) !default;
+$breadcrumb__link_current--text: () !default;

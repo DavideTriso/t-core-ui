@@ -1,0 +1,20 @@
+
+$zIndexMap: (
+  hide           : -1,
+  default        : 0,
+  level1         : 10,
+  level2         : 20,
+  level3         : 30,
+  level4         : 40,
+  level5         : 50,
+  dropdown       : 60,
+  alert          : 70,
+  fixedNavbar    : 100,
+  fixedNewsFeed  : 200,
+  fixedNotice    : 300,
+  dialogNonModal : 400,
+  dialogModal    : 500,
+  dialogAlert    : 1000,
+  fatalErrorAlert: 2000
+)
+!default;

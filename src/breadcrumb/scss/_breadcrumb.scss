@@ -1,0 +1,8 @@
+.breadcrumb {
+  display: flex;
+  @include flexPositioning($breadcrumb--flexPositioning);
+  @include padding($breadcrumb--padding);
+  @include sizes($breadcrumb--sizes);
+  overflow-x: $breadcrumb--overflow-y;
+  white-space: $breadcrumb--white-space;
+} 

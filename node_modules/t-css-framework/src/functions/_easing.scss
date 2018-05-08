@@ -1,0 +1,7 @@
+@function easing($easingMapKey) {
+  @if map-has-key($easingMap, $easingMapKey) {
+    @return map-get($easingMap, $easingMapKey);
+  } @else {
+    @error "The key #{$easingMapKey} does not exist in $easingMap.";
+  }
+}

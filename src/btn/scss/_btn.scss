@@ -1,0 +1,34 @@
+.btn {
+  display: inline-flex;
+  @include flexPositioning($btn--flexPositioning);
+  @include font($btn--font);
+  @include text($btn--text);
+  @include typography($btn--typography);
+  @include border($btn--border);
+  @include background($btn--background);
+  @include sizes($btn--sizes);
+  @include padding($btn--padding);
+
+  &:focus,
+  &:hover {
+    @include font($btnPhover--font);
+    @include text($btnPhover--text);
+    @include border($btnPhover--border);
+    @include background($btnPhover--background);
+
+    @if $btnPhover--transform != "" {
+      transform: $btnPhover--transform;
+    }
+  }
+
+  &:active {
+    @include font($btnPactive--font);
+    @include text($btnPactive--text);
+    @include border($btnPactive--border);
+    @include background($btnPactive--background);
+
+    @if $btnPactive--transform != "" {
+      transform: $btnPactive--transform;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+//APP GRID
+@include generateAppGrid($appGridClassName, $appGridColumnsMap, $appGridRowsMap);
+
+//APP GRID RESPONSIVE GAP
+@include generateResponsiveGap($gapBreakpointsMap, $gapList, $appGridClassName, $gapModifierName, column);
+@include generateResponsiveGap($gapBreakpointsMap, $gapList, $appGridClassName, $gapModifierName, row);
+
+//APP GRID RESET GAP
+@include responsiveGapReset($breakpointsMap, $appGridClassName, $resetGapModifierName);
+
+//APP NESTED GRID
+@include generateAppGrid($appNestedGridClassName, $appNestedGridColumnsMap, $appNestedGridRowsMap);
+
+//APP NESTED GRID RESPONSIVE GAP
+@include generateResponsiveGap($gapBreakpointsMap, $gapList, $appNestedGridClassName, $gapModifierName, column);
+@include generateResponsiveGap($gapBreakpointsMap, $gapList, $appNestedGridClassName, $gapModifierName, row);
+
+//APP NESTED GRID
+@include responsiveGapReset($breakpointsMap, $appNestedGridClassName, $resetGapModifierName);

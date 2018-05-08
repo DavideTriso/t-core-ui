@@ -1,0 +1,12 @@
+@function mapDeepGet($map, $keys...) {
+  @each $key in $keys {
+    @if map-has-key($map, $key) {
+      $map: map-get($map, $key);
+    }
+    @else {
+      @error "The key #{$key} is not defined in the map.";
+    }
+  }
+
+  @return $map;
+}

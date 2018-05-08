@@ -1,0 +1,4 @@
+.btn_sm {
+  @include padding($btn_sm--padding);
+  @include font($btn_sm--font);
+}
