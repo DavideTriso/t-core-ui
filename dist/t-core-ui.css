@@ -384,7 +384,7 @@ var {
 .breadcrumb__link[href] {
   text-decoration: underline;
 }
-.breadcrumb__link[href]:hover, .breadcrumb__link[href]:focus {
+.breadcrumb__link[href]:focus, .breadcrumb__link[href]:hover {
   text-decoration: none;
 }
 

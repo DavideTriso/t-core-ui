@@ -16,12 +16,13 @@
   @include padding($breadcrumb__item--padding);
 
   &:after {
-    content: "";
-    display: inline-block;
+    content  : "";
+    display  : inline-block;
     @include sizes($breadcrumb__item--sizes);
     @include border($breadcrumb__item--border);
-    transform: $breadcrumb__item--translate rotate(-45deg) ;
+    transform: $breadcrumb__item--translate rotate(-45deg);
   }
+
   &:last-child {
     &:after {
       content: none;
@@ -34,9 +35,9 @@
     @include font($breadcrumb__link--font);
     @include text($breadcrumb__link--text);
     @include typography($breadcrumb__link--typography);
-    
-    &:hover,
-    &:focus {
+
+    &:focus,
+    &:hover {
       @include font($breadcrumb__linkPhover--font);
       @include text($breadcrumb__linkPhover--text);
     }

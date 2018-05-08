@@ -7,28 +7,13 @@ var gulp = require('gulp'),
   concat = require('gulp-concat'),
   notify = require('gulp-notify');
 
-
 //SCSS -> CSS
 //Compile SCSS and save compiled + minified CSS file to 'dist' folder
 gulp.task('scss', function () {
-  return sass('src/t-core-ui.scss', {
-      style: 'expanded'
-    })
-    .pipe(autoprefixer('last 5 version'))
-    .pipe(gulp.dest('dist'))
-    .pipe(gulp.dest('docs'))
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(cssnano())
-    .pipe(gulp.dest('dist'))
-    .pipe(gulp.dest('docs'))
-    .pipe(notify({
-      message: 'scss task complete'
-    }));
+  return sass('src/t-core-ui.scss', {style: 'expanded'}).pipe(autoprefixer('last 5 version')).pipe(gulp.dest('dist')).pipe(gulp.dest('docs')).pipe(rename({suffix: '.min'})).pipe(cssnano()).pipe(gulp.dest('dist')).pipe(gulp.dest('docs')).pipe(notify({message: 'scss task complete'}));
 });
 
 //WATCH TASKS
 gulp.task('watchScss', function () {
-  gulp.watch('src/**/**/**/*.scss', ['scss']);
+  gulp.watch('src/**/**/**/*.scss', gulp.parallel('scss'));
 });
