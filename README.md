@@ -13,7 +13,7 @@ Core UI Components for [T](https://github.com/DavideTriso/t-css-framework).
 
 ## DEPENDENCIES
 
-**No dependencies**
+**T** css framework
 
 ##
 
