@@ -1,0 +1,112 @@
+//BLOCK
+$pagination--padding: (
+  topBottom: 0.5rem,
+  leftRight: 0.3rem
+)
+!default;
+
+//ELEMENTS
+//list
+$pagination__list--flexPositioning: (
+  justifyContent: center,
+  alignItems    : center,
+  alignContent  : center,
+  flexWrap      : no-wrap
+)
+!default;
+
+//entry
+$pagination__entry--padding: (
+  all: 0.1rem
+)
+!default;
+
+//link
+$pagination__link--sizes: (
+  minWidth: 1.6rem,
+)
+!default;
+$pagination__link--padding: (
+  all: 0.2rem
+)
+!default;
+$pagination__link--margin: (
+  topBottom: 0,
+  leftRight: 0.1rem
+)
+!default;
+$pagination__link--border: (
+  borderStyle : solid,
+  borderWidth : 0.05rem,
+  borderRadius: 0.2rem,
+  borderColor : #ccc
+)
+!default;
+$pagination__link--background: (
+  backgroundColor: #f2f2f2
+)
+!default;
+$pagination__link--text: (
+  textAlign: center
+)
+!default;
+$pagination__link--font: (
+  fontSize: 0.9rem
+)
+!default;
+$pagination__link--typography: ()
+!default;
+
+$pagination__linkPhover--border: ()
+!default;
+$pagination__linkPhover--background: ()
+!default;
+$pagination__linkPhover--text: (
+  textDecoration: underline
+)
+!default;
+$pagination__linkPhover--font: ()
+!default;
+
+$pagination__linkPactive--border: (
+  borderColor: #c1baba
+)
+!default;
+$pagination__linkPactive--background: (
+  backgroundColor: #ded6d6
+)
+!default;
+$pagination__linkPactive--text: ()
+!default;
+$pagination__linkPactive--font: ()
+!default;
+
+//modifier: Current
+$pagination__link_current--border: (
+  borderColor: #3c3c3c
+)
+!default;
+$pagination__link_current--background: (
+  backgroundColor: #464444
+)
+!default;
+$pagination__link_current--text: (
+  color: #fff
+)
+!default;
+$pagination__link_current--font: ()
+!default;
+$pagination__link_current--typography: ()
+!default;
+
+$pagination__link_currentPhover--border: ()
+!default;
+$pagination__link_currentPhover--background: ()
+!default;
+$pagination__link_currentPhover--text: (
+  textDecoration: none,
+  color         : #fff
+)
+!default;
+$pagination__link_currentPhover--font: ()
+!default;

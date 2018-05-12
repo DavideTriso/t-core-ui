@@ -1,0 +1,18 @@
+.pagination__link_current {
+  &,
+  &:active {
+    @include border($pagination__link_current--border);
+    @include background($pagination__link_current--background);
+    @include text($pagination__link_current--text);
+    @include font($pagination__link_current--font);
+    @include typography($pagination__link_current--typography);
+  }
+
+  &:focus,
+  &:hover {
+    @include border($pagination__link_currentPhover--border);
+    @include background($pagination__link_currentPhover--background);
+    @include text($pagination__link_currentPhover--text);
+    @include font($pagination__link_currentPhover--font);
+  }
+}

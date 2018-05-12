@@ -1,0 +1,36 @@
+.pagination__list {
+  display: flex;
+  @include flexPositioning($pagination__list--flexPositioning);
+}
+
+.pagination__entry {
+  @include padding($pagination__entry--padding);
+
+}
+
+.pagination__link {
+  display: block;
+  @include sizes($pagination__link--sizes);
+  @include padding($pagination__link--padding);
+  @include margin($pagination__link--margin);
+  @include border($pagination__link--border);
+  @include background($pagination__link--background);
+  @include text($pagination__link--text);
+  @include font($pagination__link--font);
+  @include typography($pagination__link--typography);
+
+  &:focus,
+  &:hover {
+    @include border($pagination__linkPhover--border);
+    @include background($pagination__linkPhover--background);
+    @include text($pagination__linkPhover--text);
+    @include font($pagination__linkPhover--font);
+  }
+
+  &:active {
+    @include border($pagination__linkPactive--border);
+    @include background($pagination__linkPactive--background);
+    @include text($pagination__linkPactive--text);
+    @include font($pagination__linkPactive--font);
+  }
+}
