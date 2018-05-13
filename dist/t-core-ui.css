@@ -559,3 +559,36 @@ var {
   color: #fff;
   text-decoration: none;
 }
+
+.well {
+  display: block;
+  padding: 1rem;
+  border-color: #7897e0;
+  border-radius: 0.3rem;
+  border-style: solid;
+  border-width: 0.05rem;
+  background-color: #a5b7e6;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.3rem #e0e0e0;
+          box-shadow: 0.1rem 0.1rem 0.3rem #e0e0e0;
+}
+
+.well_primary {
+  border-color: #f09968;
+  background-color: #f1b999;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.3rem #f1b999;
+          box-shadow: 0.1rem 0.1rem 0.3rem #f1b999;
+}
+
+.well_secondary {
+  border-color: #eb8686;
+  background-color: #e7afaf;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.3rem #e7afaf;
+          box-shadow: 0.1rem 0.1rem 0.3rem #e7afaf;
+}
+
+.well_tertiary {
+  border-color: #76e39a;
+  background-color: #a6e9bc;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.3rem #a6e9bc;
+          box-shadow: 0.1rem 0.1rem 0.3rem #a6e9bc;
+}
