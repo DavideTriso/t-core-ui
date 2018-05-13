@@ -1,0 +1,9 @@
+.well_primary {
+  @include padding($well_primary--padding);
+  @include border($well_primary--border);
+  @include background($well_primary--background);
+
+  @if $well_primary--box-shadow != "" {
+    box-shadow: $well_primary--box-shadow;
+  }
+}

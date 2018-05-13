@@ -1,0 +1,10 @@
+.well {
+  display: block;
+  @include padding($well--padding);
+  @include border($well--border);
+  @include background($well--background);
+
+  @if $well--box-shadow != "" {
+    box-shadow: $well--box-shadow;
+  }
+}

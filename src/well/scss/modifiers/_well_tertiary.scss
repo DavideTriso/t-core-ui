@@ -1,0 +1,9 @@
+.well_tertiary {
+  @include padding($well_tertiary--padding);
+  @include border($well_tertiary--border);
+  @include background($well_tertiary--background);
+
+  @if $well_tertiary--box-shadow != "" {
+    box-shadow: $well_tertiary--box-shadow;
+  }
+}

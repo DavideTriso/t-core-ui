@@ -1,0 +1,69 @@
+//BLOCK
+$well--padding: (
+  all: 1rem
+)
+!default;
+
+$well--border: (
+  borderStyle : solid,
+  borderWidth : 0.05rem,
+  borderColor : #7897e0,
+  borderRadius: 0.3rem
+)
+!default;
+
+$well--background: (
+  backgroundColor: #a5b7e6
+)
+!default;
+
+$well--box-shadow: 0.1rem 0.1rem 0.3rem #e0e0e0 !default;
+
+//modifiers
+//primary
+$well_primary--padding: ()
+!default;
+
+$well_primary--border: (
+  borderColor: #f09968
+)
+!default;
+
+$well_primary--background: (
+  backgroundColor: #f1b999
+)
+!default;
+
+$well_primary--box-shadow: 0.1rem 0.1rem 0.3rem #f1b999 !default;
+
+//secondary
+$well_secondary--padding: ()
+!default;
+
+$well_secondary--border: (
+  borderColor: #eb8686
+)
+!default;
+
+$well_secondary--background: (
+  backgroundColor: #e7afaf
+)
+!default;
+
+$well_secondary--box-shadow: 0.1rem 0.1rem 0.3rem #e7afaf !default;
+
+//secondary
+$well_tertiary--padding: ()
+!default;
+
+$well_tertiary--border: (
+  borderColor: #76e39a
+)
+!default;
+
+$well_tertiary--background: (
+  backgroundColor: #a6e9bc
+)
+!default;
+
+$well_tertiary--box-shadow: 0.1rem 0.1rem 0.3rem #a6e9bc !default;
