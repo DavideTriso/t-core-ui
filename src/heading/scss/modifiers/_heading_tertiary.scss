@@ -1,0 +1,6 @@
+.heading_tertiary {
+  @include font($heading_tertiary--font);
+  @include text($heading_tertiary--text);
+  @include typography($heading_tertiary--typography);
+  @include padding($heading_tertiary--padding);
+}

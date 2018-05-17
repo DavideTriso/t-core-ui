@@ -31,4 +31,14 @@
       transform: $btnPactive--transform;
     }
   }
+
+  &:disabled {
+    &,
+    &:hover {
+      @include font($btnPdisabled--font);
+      @include text($btnPdisabled--text);
+      @include border($btnPdisabled--border);
+      @include background($btnPdisabled--background);
+    }
+  }
 }

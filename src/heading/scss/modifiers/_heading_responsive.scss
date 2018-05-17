@@ -1,0 +1,49 @@
+.heading_responsive {
+  @include mqMin(w2) {
+    @include font($w2-heading_responsive--font);
+  }
+
+  @include mqMin(w4) {
+    @include font($w4-heading_responsive--font);
+  }
+
+  &.heading_xs {
+    @include mqMin(w2) {
+      @include font($w2-heading_xs_responsive--font);
+
+    }
+    @include mqMin(w4) {
+      @include font($w4-heading_xs_responsive--font);
+    }
+  }
+
+  &.heading_sm {
+    @include mqMin(w2) {
+      @include font($w2-heading_sm_responsive--font);
+
+    }
+    @include mqMin(w4) {
+      @include font($w4-heading_sm_responsive--font);
+    }
+  }
+
+  &.heading_lg {
+    @include mqMin(w2) {
+      @include font($w2-heading_lg_responsive--font);
+
+    }
+    @include mqMin(w4) {
+      @include font($w4-heading_lg_responsive--font);
+    }
+  }
+
+  &.heading_xl {
+    @include mqMin(w2) {
+      @include font($w2-heading_xl_responsive--font);
+
+    }
+    @include mqMin(w4) {
+      @include font($w4-heading_xl_responsive--font);
+    }
+  }
+}

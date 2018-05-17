@@ -1,0 +1,6 @@
+.heading_secondary {
+  @include font($heading_secondary--font);
+  @include text($heading_secondary--text);
+  @include typography($heading_secondary--typography);
+  @include padding($heading_secondary--padding);
+}

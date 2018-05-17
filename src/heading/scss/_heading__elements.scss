@@ -1,0 +1,7 @@
+.heading__sub {
+  display: block;
+  @include font($heading__sub--font);
+  @include text($heading__sub--text);
+  @include typography($heading__sub--typography);
+  @include padding($heading__sub--padding);
+}

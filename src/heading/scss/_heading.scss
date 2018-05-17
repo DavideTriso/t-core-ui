@@ -1,0 +1,6 @@
+.heading {
+  @include font($heading--font);
+  @include text($heading--text);
+  @include typography($heading--typography);
+  @include padding($heading--padding);
+}

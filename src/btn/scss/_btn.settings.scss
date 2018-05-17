@@ -3,18 +3,21 @@ $btnBgColor         : #222 !default;
 $btnBorderRadius    : 0.2rem !default;
 $btnBorderWidth     : 0.1rem !default;
 $btnMinWidth        : 10rem !default;
+//disabled
+$btnDisabledColor   : #b6b6b6 !default;
+
 //variants
 $btnBgColorPrimary  : #0b4187 !default;
 $btnBgColorSecondary: #810909 !default;
 $btnBgColorTertiary : #0e703b !default;
 
 //sizes:
-$mdFontSize         : 1rem !default;
+$mdFontSize         : fontSize(md) !default;
 $mdPaddingTopBottom : 0.4rem !default;
 $mdPaddingLeftRight : 0.8rem !default;
 
-//size multiply factor
-$xs                 : 0.8 !default;
-$sm                 : 0.9 !default;
-$lg                 : 1.2 !default;
-$xl                 : 1.4 !default;
+//size multiply
+$btnXs              : 0.8 !default;
+$btnSm              : 0.9 !default;
+$btnLg              : 1.2 !default;
+$btnXl              : 1.4 !default;

@@ -60,6 +60,22 @@ $btnPactive--background: (
 !default;
 $btnPactive--transform: "" !default;
 
+//disabled
+$btnPdisabled--font: ()
+!default;
+$btnPdisabled--text: (
+  color: $btnDisabledColor
+)
+!default;
+$btnPdisabled--border: (
+  borderColor: lighten($btnDisabledColor, 10%)
+)
+!default;
+$btnPdisabled--background: (
+  backgroundColor: lighten($btnDisabledColor, 15%)
+)
+!default;
+
 // primary
 $btn_primary--font: ()
 !default;
@@ -199,41 +215,41 @@ $btn_tertiaryPactive--transform: "" !default;
 
 //SIZES
 $btn_xs--font: (
-  fontSize: $mdFontSize * $xs
+  fontSize: $mdFontSize * $btnXs
 )
 !default;
 $btn_xs--padding: (
-  topBottom: $mdPaddingTopBottom * $xs,
-  leftRight: $mdPaddingLeftRight * $xs
+  topBottom: $mdPaddingTopBottom * $btnXs,
+  leftRight: $mdPaddingLeftRight * $btnXs
 )
 !default;
 
 $btn_sm--font: (
-  fontSize: $mdFontSize * $sm
+  fontSize: $mdFontSize * $btnSm
 )
 !default;
 $btn_sm--padding: (
-  topBottom: $mdPaddingTopBottom * $sm,
-  leftRight: $mdPaddingLeftRight * $sm
+  topBottom: $mdPaddingTopBottom * $btnSm,
+  leftRight: $mdPaddingLeftRight * $btnSm
 )
 !default;
 
 $btn_lg--font: (
-  fontSize: $mdFontSize * $lg
+  fontSize: $mdFontSize * $btnLg
 )
 !default;
 $btn_lg--padding: (
-  topBottom: $mdPaddingTopBottom * $lg,
-  leftRight: $mdPaddingLeftRight * $lg
+  topBottom: $mdPaddingTopBottom * $btnLg,
+  leftRight: $mdPaddingLeftRight * $btnLg
 )
 !default;
 
 $btn_xl--font: (
-  fontSize: $mdFontSize * $xl
+  fontSize: $mdFontSize * $btnXl
 )
 !default;
 $btn_xl--padding: (
-  topBottom: $mdPaddingTopBottom * $xl,
-  leftRight: $mdPaddingLeftRight * $xl
+  topBottom: $mdPaddingTopBottom * $btnXl,
+  leftRight: $mdPaddingLeftRight * $btnXl
 )
 !default;

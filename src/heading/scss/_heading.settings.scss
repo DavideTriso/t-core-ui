@@ -1,0 +1,29 @@
+//font sizes maps
+$headingDefault: (
+  w1: fontSize(xl),
+  w4: fontSize(xxl)
+)
+!default;
+
+$headingXs: (
+  w1: fontSize(md),
+  w4: fontSize(lg)
+);
+
+$headingSm: (
+  w1: fontSize(lg),
+  w4: fontSize(xl)
+)
+!default;
+
+$headingLg: (
+  w1: fontSize(xxl),
+  w4: fontSize(heroXs)
+)
+!default;
+
+$headingXl: (
+  w1: fontSize(xxxl),
+  w4: fontSize(heroSm)
+)
+!default;

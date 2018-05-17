@@ -1,0 +1,44 @@
+.heading_fluidsize {
+  @include mqMin(w1) {
+    @include font($w2-heading_fluidsize--font);
+  }
+  @include mqMin(w4) {
+    @include font($w4-heading_fluidsize--font);
+  }
+
+  &.heading_xs {
+    @include mqMin(w1) {
+      @include font($w2-heading_xs_fluidsize--font);
+    }
+    @include mqMin(w4) {
+      @include font($w4-heading_xs_fluidsize--font);
+    }
+  }
+
+  &.heading_sm {
+    @include mqMin(w1) {
+      @include font($w2-heading_sm_fluidsize--font);
+    }
+    @include mqMin(w4) {
+      @include font($w4-heading_sm_fluidsize--font);
+    }
+  }
+
+  &.heading_lg {
+    @include mqMin(w1) {
+      @include font($w2-heading_lg_fluidsize--font);
+    }
+    @include mqMin(w4) {
+      @include font($w4-heading_lg_fluidsize--font);
+    }
+  }
+
+  &.heading_xl {
+    @include mqMin(w1) {
+      @include font($w2-heading_xl_fluidsize--font);
+    }
+    @include mqMin(w4) {
+      @include font($w4-heading_xl_fluidsize--font);
+    }
+  }
+}
