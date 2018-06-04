@@ -41,5 +41,9 @@
       @include font($breadcrumb__linkPhover--font);
       @include text($breadcrumb__linkPhover--text);
     }
+
+    &:focus {
+      @include outline($breadcrumb__linkPfocus--outline);
+    }
   }
 }

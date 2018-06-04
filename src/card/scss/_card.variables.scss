@@ -1,0 +1,127 @@
+
+//BLOCK
+$card--padding: (
+  top   : 0.3rem,
+  bottom: 0.3rem
+)
+!default;
+$card--sizes: ()
+!default;
+$card--border: (
+  borderStyle : solid,
+  borderWidth : 0.05rem,
+  borderColor : #e9e9e9,
+  borderRadius: 0.4rem
+)
+!default;
+$card--background: (
+  backgroundColor: #f5f5f5
+)
+!default;
+$card--box-shadow: "" !default;
+
+//hover and focus
+$cardPhover--border: ()
+!default;
+$cardPhover--background: ()
+!default;
+$cardPhover--box-shadow: "" !default;
+$cardPhover--cursor: "" !default;
+
+//ELEMENTS
+//box
+$card__box--padding: (
+  topBottom: 0.3rem,
+  leftRight: 0.6rem
+)
+!default;
+$card__box--margin: ()
+!default;
+
+//MODIFIERS
+//primary
+$card_primary--padding: ()
+!default;
+$card_primary--sizes: ()
+!default;
+$card_primary--border: (
+  borderColor: #9cc5f6
+)
+!default;
+$card_primary--background: (
+  backgroundColor: #b3cdec
+)
+!default;
+$card_primary--box-shadow: "" !default;
+$card_primaryPhover--border: ()
+!default;
+$card_primaryPhover--background: ()
+!default;
+$card_primaryPhover--box-shadow: "" !default;
+$card_primaryPhover--cursor: "" !default;
+
+//secondary
+$card_secondary--padding: ()
+!default;
+$card_secondary--sizes: ()
+!default;
+$card_secondary--border: (
+  borderColor: #9cf6c6
+)
+!default;
+$card_secondary--background: (
+  backgroundColor: #b3ecd4
+)
+!default;
+$card_secondary--box-shadow: "" !default;
+$card_secondaryPhover--border: ()
+!default;
+$card_secondaryPhover--background: ()
+!default;
+$card_secondaryPhover--box-shadow: "" !default;
+$card_secondaryPhover--cursor: "" !default;
+
+//tertiary
+$card_tertiary--padding: ()
+!default;
+$card_tertiary--sizes: ()
+!default;
+$card_tertiary--border: (
+  borderColor: #f69c9c
+)
+!default;
+$card_tertiary--background: (
+  backgroundColor: #f0cfcf
+)
+!default;
+$card_tertiary--box-shadow: "" !default;
+$card_tertiaryPhover--border: ()
+!default;
+$card_tertiaryPhover--background: ()
+!default;
+$card_tertiaryPhover--box-shadow: "" !default;
+$card_tertiaryPhover--cursor: "" !default;
+
+//card__box_overlaptop
+$card__box_overlaptop--background: (
+  backgroundColor: rgba(#fff,0.8)
+)
+!default;
+
+$card__box_overlaptop--border: (
+  borderRadius: 0.4rem
+)
+!default;
+$card__box_overlaptop--top: 0.05rem !default;
+
+//card__box_overlapbottom
+$card__box_overlapbottom--background: (
+  backgroundColor: rgba(#fff,0.8)
+)
+!default;
+
+$card__box_overlapbottom--border: (
+  borderRadius: 0.4rem
+)
+!default;
+$card__box_overlapbottom--bottom: 0.05rem !default;

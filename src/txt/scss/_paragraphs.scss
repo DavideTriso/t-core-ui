@@ -1,0 +1,91 @@
+#{$txtClassName} {
+  p {
+    @include font($p--font);
+    @include text($p--text);
+    @include typography($p--typography);
+    @include margin($p--margin);
+    @include padding($p--padding);
+  }
+
+  abbr {
+    @include font($abbr--font);
+    @include text($abbr--text);
+    @include typography($abbr--typography);
+
+    @if ($abbr--cursor != "") {
+      cursor: $abbr--cursor;
+    }
+  }
+
+  blockquote {
+    @include font($blockquote--font);
+    @include text($blockquote--text);
+    @include typography($blockquote--typography);
+    @include margin($blockquote--margin);
+    @include padding($blockquote--padding);
+    @include border($blockquote--border);
+    @include background($blockquote--border);
+  }
+  //the title of a work
+  cite {
+    @include font($cite--font);
+    @include text($cite--text);
+  }
+
+  em {
+    @include font($em--font);
+    @include text($em--text);
+  }
+
+  i {
+    @include font($em--font);
+    @include text($em--text);
+  }
+
+  mark {
+    @include font($mark--font);
+    @include text($mark--text);
+    @include background($mark--background);
+  }
+
+  //short quotation
+  q {
+    @include font($q--font);
+    @include text($q--text);
+
+    &:after {
+      content: $qPafter--content;
+    }
+
+    &:before {
+      content: $qPbefore--content;
+    }
+  }
+  //mark up text that is no longer correct
+  s {
+    @include font($s--font);
+    @include text($s--text);
+  }
+
+  strong {
+    @include font($strong--font);
+    @include text($strong--text);
+  }
+
+  sub {
+    @include font($sub--font);
+    @include text($sub--text);
+    @include typography($sub--typography)
+  }
+
+  sup {
+    @include font($sup--font);
+    @include text($sup--text);
+    @include typography($sup--typography)
+  }
+
+  time {
+    @include font($time--font);
+    @include text($time--text);
+  }
+}

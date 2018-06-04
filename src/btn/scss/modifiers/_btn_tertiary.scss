@@ -1,28 +1,34 @@
 .btn_tertiary {
-  display: inline-block;
-    @include font($btn_tertiary--font);
-    @include text($btn_tertiary--text);
-    @include typography($btn_tertiary--typography);
-    @include border($btn_tertiary--border);
-    @include background($btn_tertiary--background);
+  @include font($btn_tertiary--font);
+  @include text($btn_tertiary--text);
+  @include typography($btn_tertiary--typography);
+  @include border($btn_tertiary--border);
+  @include background($btn_tertiary--background);
 
-    &:hover,
-    &:focus {
-      @include font($btn_tertiaryPhover--font);
-      @include text($btn_tertiaryPhover--text);
-      @include border($btn_tertiaryPhover--border);
-      @include background($btn_tertiaryPhover--background);
-      @if $btn_tertiaryPhover--transform != "" {
-        transform: $btn_tertiaryPhover--transform;
-      }
+  @if $btn_tertiary--transition != "" {
+    transition: $btn_tertiary--transition;
+  }
+
+  &:focus,
+  &:hover {
+    @include font($btn_tertiaryPhover--font);
+    @include text($btn_tertiaryPhover--text);
+    @include border($btn_tertiaryPhover--border);
+    @include background($btn_tertiaryPhover--background);
+
+    @if $btn_tertiaryPhover--transform != "" {
+      transform: $btn_tertiaryPhover--transform;
     }
-    &:active {
-      @include font($btn_tertiaryPactive--font);
-      @include text($btn_tertiaryPactive--text);
-      @include border($btn_tertiaryPactive--border);
-      @include background($btn_tertiaryPactive--background);
-      @if $btn_tertiaryPactive--transform != "" {
-        transform: $btn_tertiaryPactive--transform;
-      }
+  }
+
+  &:active {
+    @include font($btn_tertiaryPactive--font);
+    @include text($btn_tertiaryPactive--text);
+    @include border($btn_tertiaryPactive--border);
+    @include background($btn_tertiaryPactive--background);
+
+    @if $btn_tertiaryPactive--transform != "" {
+      transform: $btn_tertiaryPactive--transform;
     }
+  }
 }

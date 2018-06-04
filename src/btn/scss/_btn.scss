@@ -9,6 +9,10 @@
   @include sizes($btn--sizes);
   @include padding($btn--padding);
 
+  @if $btn--transition != "" {
+    transition: $btn--transition;
+  }
+
   &:focus,
   &:hover {
     @include font($btnPhover--font);
@@ -19,6 +23,10 @@
     @if $btnPhover--transform != "" {
       transform: $btnPhover--transform;
     }
+  }
+
+  &:focus {
+    @include outline($btnPfocus--outline);
   }
 
   &:active {

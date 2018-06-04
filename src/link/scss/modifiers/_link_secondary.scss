@@ -1,0 +1,36 @@
+.link_secondary {
+  @include font($link_secondary--font);
+  @include text($link_secondary--text);
+  @include typography($link_secondary--typography);
+  @include background($link_secondary--background);
+  @include padding($link_secondary--padding);
+
+  @if $link_secondary--transition != "" {
+    transition: $link_secondary--transition;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    @include font($link_secondaryPhover--font);
+    @include text($link_secondaryPhover--text);
+    @include typography($link_secondaryPhover--typography);
+    @include background($link_secondaryPhover--background);
+  }
+
+  &:visited {
+    @include font($link_secondaryPvisited--font);
+    @include text($link_secondaryPvisited--text);
+    @include typography($link_secondaryPvisited--typography);
+    @include background($link_secondaryPvisited--background);
+
+    &:active,
+    &:focus,
+    &:hover {
+      @include font($link_secondaryPvisitedPhover--font);
+      @include text($link_secondaryPvisitedPhover--text);
+      @include typography($link_secondaryPvisitedPhover--typography);
+      @include background($link_secondaryPvisitedPhover--background);
+    }
+  }
+}

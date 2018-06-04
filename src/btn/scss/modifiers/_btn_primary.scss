@@ -1,28 +1,34 @@
 .btn_primary {
-  display: inline-block;
-    @include font($btn_primary--font);
-    @include text($btn_primary--text);
-    @include typography($btn_primary--typography);
-    @include border($btn_primary--border);
-    @include background($btn_primary--background);
+  @include font($btn_primary--font);
+  @include text($btn_primary--text);
+  @include typography($btn_primary--typography);
+  @include border($btn_primary--border);
+  @include background($btn_primary--background);
 
-    &:hover,
-    &:focus {
-      @include font($btn_primaryPhover--font);
-      @include text($btn_primaryPhover--text);
-      @include border($btn_primaryPhover--border);
-      @include background($btn_primaryPhover--background);
-      @if $btn_primaryPhover--transform != "" {
-        transform: $btn_primaryPhover--transform;
-      }
+  @if $btn_primary--transition != "" {
+    transition: $btn_primary--transition;
+  }
+
+  &:focus,
+  &:hover {
+    @include font($btn_primaryPhover--font);
+    @include text($btn_primaryPhover--text);
+    @include border($btn_primaryPhover--border);
+    @include background($btn_primaryPhover--background);
+
+    @if $btn_primaryPhover--transform != "" {
+      transform: $btn_primaryPhover--transform;
     }
-    &:active {
-      @include font($btn_primaryPactive--font);
-      @include text($btn_primaryPactive--text);
-      @include border($btn_primaryPactive--border);
-      @include background($btn_primaryPactive--background);
-      @if $btn_primaryPactive--transform != "" {
-        transform: $btn_primaryPactive--transform;
-      }
+  }
+
+  &:active {
+    @include font($btn_primaryPactive--font);
+    @include text($btn_primaryPactive--text);
+    @include border($btn_primaryPactive--border);
+    @include background($btn_primaryPactive--background);
+
+    @if $btn_primaryPactive--transform != "" {
+      transform: $btn_primaryPactive--transform;
     }
+  }
 }

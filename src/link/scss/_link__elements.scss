@@ -1,0 +1,5 @@
+.link__icon {
+  display       : inline-block;
+  vertical-align: middle;
+  @include padding($link__icon--padding);
+}

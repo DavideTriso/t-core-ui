@@ -1,0 +1,24 @@
+.card_tertiary {
+  @include padding($card_tertiary--padding);
+  @include sizes($card_tertiary--sizes);
+  @include border($card_tertiary--border);
+  @include background($card_tertiary--background);
+
+  @if $card_tertiary--box-shadow != "" {
+    box-shadow: $card_tertiary--box-shadow;
+  }
+
+  &:focus,
+  &:hover {
+    @include border($card_tertiaryPhover--border);
+    @include background($card_tertiaryPhover--background);
+
+    @if $card_tertiaryPhover--box-shadow != "" {
+      box-shadow: $card_tertiaryPhover--box-shadow;
+    }
+
+    @if $card_tertiaryPhover--cursor != "" {
+      cursor: $card_tertiaryPhover--cursor;
+    }
+  }
+}

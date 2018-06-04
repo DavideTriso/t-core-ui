@@ -1,0 +1,41 @@
+.link {
+  display: inline-block;
+  @include font($link--font);
+  @include text($link--text);
+  @include typography($link--typography);
+  @include background($link--background);
+  @include padding($link--padding);
+
+  @if $link--transition != "" {
+    transition: $link--transition;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    @include font($linkPhover--font);
+    @include text($linkPhover--text);
+    @include typography($linkPhover--typography);
+    @include background($linkPhover--background);
+  }
+
+  &:focus {
+    @include outline($linkPfocus--outline);
+  }
+
+  &:visited {
+    @include font($linkPvisited--font);
+    @include text($linkPvisited--text);
+    @include typography($linkPvisited--typography);
+    @include background($linkPvisited--background);
+
+    &:active,
+    &:focus,
+    &:hover {
+      @include font($linkPvisitedPhover--font);
+      @include text($linkPvisitedPhover--text);
+      @include typography($linkPvisitedPhover--typography);
+      @include background($linkPvisitedPhover--background);
+    }
+  }
+}

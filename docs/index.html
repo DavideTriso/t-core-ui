@@ -61,10 +61,6 @@
   <br />
   <br />
 
-  <button class="btn btn_busy" type="button">
-    <span class="btn__txt">Button busy</span>
-    <span class="btn__icon">&rarr;</span>
-  </button>
 
   <button class="btn btn_secondary" type="button" disabled>
     <span class="btn__txt">Button disabled</span>
@@ -72,8 +68,18 @@
   </button>
   <br />
   <br />
+  <button class="btn btn_primary btn_busy" type="button">
+    <span class="btn__loader"></span>
+    <span class="btn__txt">Button busy</span>
+    <span class="btn__icon">&rarr;</span>
+  </button>
+  <button class="btn btn_busy" type="button">
+    <span class="btn__loader"></span>
+    Button busy
+  </button>
 
-
+  <br />
+  <br />
   <!--SIZES-->
   <button class="btn btn_primary btn_xs" type="button">
     <span class="btn__txt">Button xs</span>
@@ -204,9 +210,87 @@
 <br />
 <br />
 <h1 class="heading">Default heading <span class="heading__sub">heading subtitle</span></h1>
+<br />
+<br />
+<!--CARD-->
+<section class="card" style="max-width: 15rem">
+  <header class="card__box">
+    <h2 class="hading heading_sm"><a href="#">Card</a></h2>
+  </header>
+  <a class="card__box" href="#">
+    <img src="img-portrait.jpg" class="img" alt="Go to this aweseome page" />
+  </a>
+  <div class="card__box">
+    <p>Card box accepts any text and image content. Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  </div>
+  <div class="card__box">
+    <a class="btn btn_full btn_primary" href="#">Click me </a>
+  </div>
+</section>
+<br />
+<br />
+<section class="card card_primary" style="max-width: 15rem">
+  <header class="card__box">
+    <h2 class="hading heading_sm"><a href="#">Card primary</a></h2>
+  </header>
+  <a class="card__box" href="#">
+    <img src="img-portrait.jpg" class="img" alt="Go to this aweseome page" />
+  </a>
+  <div class="card__box">
+    <p>Card box accepts any text and image content. Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  </div>
+  <div class="card__box">
+    <a class="btn btn_full btn_primary" href="#">Click me </a>
+  </div>
+</section>
+<br />
+<br />
+<section class="card card_secondary" style="max-width: 15rem">
+  <header class="card__box">
+    <h2 class="hading heading_sm"><a href="#">Card secondary</a></h2>
+  </header>
+  <a class="card__box" href="#">
+    <img src="img-portrait.jpg" class="img" alt="Go to this aweseome page" />
+  </a>
+  <div class="card__box">
+    <p>Card box accepts any text and image content. Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  </div>
+  <div class="card__box">
+    <a class="btn btn_full btn_primary" href="#">Click me </a>
+  </div>
+</section>
+<br />
+<br />
+<section class="card card_tertiary" style="max-width: 15rem">
+  <header class="card__box card__box_overlaptop">
+    <h2 class="hading heading_sm"><a href="#">Card tertiary</a></h2>
+  </header>
+  <a class="card__box" href="#">
+    <img src="img-portrait.jpg" class="img" alt="Go to this aweseome page" />
+  </a>
+  <div class="card__box card__box_overlapbottom">
+    <a class="btn btn_full btn_primary" href="#">Click me </a>
+  </div>
+</section>
 
+<br />
+<br />
+<a href="#" class="link">Default link</a>
+<a href="#" class="link link_primary">Link primary</a>
+<a href="#" class="link link_secondary">Link secondary</a>
+<a href="#" class="link link_tertiary">Link tertiary</a>
 
+<a href="#" class="link">Link with icon <span class="link__icon">&rarr;</span></a>
+<a href="#" class="link"><span class="link__icon">&larr;</span> Link with icon</a>
 
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 </body>
 
 </html>

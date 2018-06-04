@@ -1,0 +1,36 @@
+.link_tertiary {
+  @include font($link_tertiary--font);
+  @include text($link_tertiary--text);
+  @include typography($link_tertiary--typography);
+  @include background($link_tertiary--background);
+  @include padding($link_tertiary--padding);
+
+  @if $link_tertiary--transition != "" {
+    transition: $link_tertiary--transition;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    @include font($link_tertiaryPhover--font);
+    @include text($link_tertiaryPhover--text);
+    @include typography($link_tertiaryPhover--typography);
+    @include background($link_tertiaryPhover--background);
+  }
+
+  &:visited {
+    @include font($link_tertiaryPvisited--font);
+    @include text($link_tertiaryPvisited--text);
+    @include typography($link_tertiaryPvisited--typography);
+    @include background($link_tertiaryPvisited--background);
+
+    &:active,
+    &:focus,
+    &:hover {
+      @include font($link_tertiaryPvisitedPhover--font);
+      @include text($link_tertiaryPvisitedPhover--text);
+      @include typography($link_tertiaryPvisitedPhover--typography);
+      @include background($link_tertiaryPvisitedPhover--background);
+    }
+  }
+}

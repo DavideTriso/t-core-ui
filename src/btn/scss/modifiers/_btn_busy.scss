@@ -1,0 +1,15 @@
+.btn_busy {
+  position: relative;
+
+  &,
+  &:active,
+  &:focus,
+  &:hover {
+    color: transparent;
+  }
+
+  .btn__loader {
+    position: absolute;
+    @include loader($btn_busy--loader);
+  }
+}

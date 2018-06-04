@@ -1,0 +1,8 @@
+.card__box_overlapbottom {
+  position: absolute;
+  bottom  : $card__box_overlapbottom--bottom;
+  left    : 0;
+  width   : 100%;
+  @include background($card__box_overlapbottom--background);
+  @include border($card__box_overlapbottom--border);
+}

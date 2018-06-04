@@ -1,0 +1,310 @@
+$txtClassName: ".txt";
+
+$tabletMinWidth: 767px !default;
+$desktopMinWidth: 1200px !default;
+$txtFontSize: 1rem;
+$tablet--txtFontSize: 1.05rem;
+$desktop--txtFontSize: 1.1rem;
+
+//HEADINGS
+$h-fallback--font: ()
+!default;
+$h-fallback--text: ()
+!default;
+$h-fallback--typography: ()
+!default;
+$h-fallback--border: ()
+!default;
+$h-fallback--background: ()
+!default;
+$h-fallback--margin: ()
+!default;
+$h-fallback--padding: ()
+!default;
+
+//H1
+$h1--font: ()
+!default;
+$h1--text: ()
+!default;
+$h1--typography: ()
+!default;
+$h1--border: ()
+!default;
+$h1--background: ()
+!default;
+$h1--margin: ()
+!default;
+$h1--padding: ()
+!default;
+//resp
+$tablet--h1--font: ()
+!default;
+$desktop--h1--font: ()
+!default;
+
+//H2
+$h2--font: ()
+!default;
+$h2--text: ()
+!default;
+$h2--typography: ()
+!default;
+$h2--border: ()
+!default;
+$h2--background: ()
+!default;
+$h2--margin: ()
+!default;
+$h2--padding: ()
+!default;
+//resp
+$tablet--h2--font: ()
+!default;
+$desktop--h2--font: ()
+!default;
+
+//H3
+$h3--font: ()
+!default;
+$h3--text: ()
+!default;
+$h3--typography: ()
+!default;
+$h3--border: ()
+!default;
+$h3--background: ()
+!default;
+$h3--margin: ()
+!default;
+$h3--padding: ()
+!default;
+//resp
+$tablet--h3--font: ()
+!default;
+$desktop--h3--font: ()
+!default;
+
+//H4
+$h4--font: ()
+!default;
+$h4--text: ()
+!default;
+$h4--typography: ()
+!default;
+$h4--border: ()
+!default;
+$h4--background: ()
+!default;
+$h4--margin: ()
+!default;
+$h4--padding: ()
+!default;
+//resp
+$tablet--h4--font: ()
+!default;
+$desktop--h4--font: ()
+!default;
+
+//H5
+$h5--font: ()
+!default;
+$h5--text: ()
+!default;
+$h5--typography: ()
+!default;
+$h5--border: ()
+!default;
+$h5--background: ()
+!default;
+$h5--margin: ()
+!default;
+$h5--padding: ()
+!default;
+//resp
+$tablet--h5--font: ()
+!default;
+$desktop--h5--font: ()
+!default;
+
+//H6
+$h6--font: ()
+!default;
+$h6--text: ()
+!default;
+$h6--typography: ()
+!default;
+$h6--border: ()
+!default;
+$h6--background: ()
+!default;
+$h6--margin: ()
+!default;
+$h6--padding: ()
+!default;
+//resp
+$tablet--h6--font: ()
+!default;
+$desktop--h6--font: ()
+!default;
+
+//Use EM for font size, not rem
+//PARAGRAPHS
+$p--font: ()
+!default;
+$p--text: ()
+!default;
+$p--typography: ()
+!default;
+$p--margin: ()
+!default;
+$p--padding: ()
+!default;
+
+//abbr
+$abbr--font: ()
+!default;
+$abbr--text: ()
+!default;
+$abbr--typography: ()
+!default;
+$abbr--cursor: "" !default;
+
+//blockquote
+$blockquote--font: ()
+!default;
+$blockquote--text: ()
+!default;
+$blockquote--typography: ()
+!default;
+$blockquote--margin: ()
+!default;
+$blockquote--padding: ()
+!default;
+$blockquote--border: ()
+!default;
+$blockquote--background: ()
+!default;
+
+//cite
+$cite--font: ()
+!default;
+$cite--text: ()
+!default;
+
+//em
+$em--font: ()
+!default;
+$em--text: ()
+!default;
+
+//i
+$i--font: ()
+!default;
+$i--text: ()
+!default;
+
+//mark
+$mark--font: ()
+!default;
+$mark--text: ()
+!default;
+$mark--background: ()
+!default;
+
+//q
+$q--font: ()
+!default;
+$q--text: ()
+!default;
+$qPafter--content: none !default;
+$qPbefore--content: none !default;
+
+//s
+$s--font: ()
+!default;
+$s--text: ()
+!default;
+
+//strong
+$strong--font: ()
+!default;
+$strong--text: ()
+!default;
+
+//sub
+$sub--font: ()
+!default;
+$sub--text: ()
+!default;
+$sub--typography: ()
+!default;
+
+//sup
+$sup--font: ()
+!default;
+$sup--text: ()
+!default;
+$sup--typography: ()
+!default;
+
+//time
+$time--font: ()
+!default;
+$time--text: ()
+!default;
+
+//LINKS
+$a--font: ()
+!default;
+$a--text: ()
+!default;
+$a--typography: ()
+!default;
+$a--border: ()
+!default;
+$a--background: ()
+!default;
+$a--outline: ()
+!default;
+$a--transition: none !default;
+
+$aPhover--font: ()
+!default;
+$aPhover--text: ()
+!default;
+$aPhover--typography: ()
+!default;
+$aPhover--border: ()
+!default;
+$aPhover--background: ()
+!default;
+$aPfocus--outline: ()
+!default;
+
+//LISTS
+
+$ul--list: ()
+!default;
+$ul--margin: ()
+!default;
+$ul--padding: ()
+!default;
+
+$ol--list: ()
+!default;
+$ol--margin: ()
+!default;
+$ol--padding: ()
+!default;
+
+$li--font: ()
+!default;
+$li--text: ()
+!default;
+$li--typography: ()
+!default;
+$li--margin: ()
+!default;
+$li--padding: ()
+!default;

@@ -1,0 +1,39 @@
+#{$txtClassName} {
+  table {
+    @include border((borderWidth: 0, borderColor: transparent));
+    border-collapse: collapse;
+    border-spacing : 0;
+  }
+
+  caption {
+    @include font((fontWeight: normal));
+    @include text((textAlign: left));
+  }
+
+  tbody,
+  tfoot,
+  thead {
+    //
+  }
+
+  tr {
+    @include border((borderWidth: 0, borderColor: transparent));
+  }
+
+  th {
+    @include font((fontWeight: normal));
+    @include text((textAlign: left));
+  }
+
+  td {
+    //
+  }
+
+  colgroup {
+    //
+  }
+
+  col {
+    //
+  }
+}

@@ -1,0 +1,24 @@
+.card_secondary {
+  @include padding($card_secondary--padding);
+  @include sizes($card_secondary--sizes);
+  @include border($card_secondary--border);
+  @include background($card_secondary--background);
+
+  @if $card_secondary--box-shadow != "" {
+    box-shadow: $card_secondary--box-shadow;
+  }
+
+  &:focus,
+  &:hover {
+    @include border($card_secondaryPhover--border);
+    @include background($card_secondaryPhover--background);
+
+    @if $card_secondaryPhover--box-shadow != "" {
+      box-shadow: $card_secondaryPhover--box-shadow;
+    }
+
+    @if $card_secondaryPhover--cursor != "" {
+      cursor: $card_secondaryPhover--cursor;
+    }
+  }
+}

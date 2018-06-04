@@ -1,0 +1,21 @@
+#{$txtClassName} {
+  ol {
+    @include list($ol--list);
+    @include margin($ol--margin);
+    @include padding($ol--padding);
+  }
+
+  ul {
+    @include list($ul--list);
+    @include margin($ul--margin);
+    @include padding($ul--padding);
+  }
+
+  li {
+    @include font($li--font);
+    @include text($li--text);
+    @include typography($li--typography);
+    @include margin($li--margin);
+    @include padding($li--padding);
+  }
+}

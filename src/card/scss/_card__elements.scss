@@ -1,0 +1,5 @@
+.card__box {
+  display: block;
+  @include padding($card__box--padding);
+  @include padding($card__box--margin);
+}

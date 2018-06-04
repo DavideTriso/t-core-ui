@@ -74,6 +74,11 @@ $breadcrumb__linkPhover--text: (
   textDecoration: none
 )
 !default;
+$breadcrumb__linkPfocus--outline: (
+  outline      : 0.1rem solid #7bb2f4,
+  outlineOffset: 0.05rem
+)
+!default;
 
 //LINK CURRENT
 $breadcrumb__link_current--font: (

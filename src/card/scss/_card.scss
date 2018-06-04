@@ -1,0 +1,26 @@
+.card {
+  position: relative;
+  display : block;
+  @include padding($card--padding);
+  @include sizes($card--sizes);
+  @include border($card--border);
+  @include background($card--background);
+
+  @if $card--box-shadow != "" {
+    box-shadow: $card--box-shadow;
+  }
+
+  &:focus,
+  &:hover {
+    @include border($cardPhover--border);
+    @include background($cardPhover--background);
+
+    @if $cardPhover--box-shadow != "" {
+      box-shadow: $cardPhover--box-shadow;
+    }
+
+    @if $cardPhover--cursor != "" {
+      cursor: $cardPhover--cursor;
+    }
+  }
+}

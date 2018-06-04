@@ -1,0 +1,13 @@
+@include font((fontSize: $txtFontSize));
+
+@if $tabletMinWidth != '' {
+  @include mqMin($tabletMinWidth) {
+    @include font((fontSize: $tablet--txtFontSize));
+  }
+}
+
+@if $desktopMinWidth != '' {
+  @include mqMin($desktopMinWidth) {
+    @include font((fontSize: $desktop--txtFontSize));
+  }
+}

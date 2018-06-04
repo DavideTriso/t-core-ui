@@ -35,10 +35,20 @@ $btn--padding: (
   leftRight: $mdPaddingLeftRight
 )
 !default;
+$btnPfocus--outline: (
+  outline      : 0.15rem solid #7bb2f4,
+  outlineOffset: 0.05rem
+)
+!default;
+
+$btn--transition: 0.2s all ease-in !default;
+
 //hover and focus
 $btnPhover--font: ()
 !default;
-$btnPhover--text: ()
+$btnPhover--text: (
+  color: $btnColor
+)
 !default;
 $btnPhover--border: ()
 !default;
@@ -96,6 +106,8 @@ $btn_primary--background: (
   backgroundColor: $btnBgColorPrimary
 )
 !default;
+$btn_primary--transition: "" !default;
+
 //hover and focus
 $btn_primaryPhover--font: ()
 !default;
@@ -141,6 +153,8 @@ $btn_secondary--background: (
   backgroundColor: $btnBgColorSecondary
 )
 !default;
+$btn_secondary--transition: "" !default;
+
 //hover and focus
 $btn_secondaryPhover--font: ()
 !default;
@@ -186,6 +200,8 @@ $btn_tertiary--background: (
   backgroundColor: $btnBgColorTertiary
 )
 !default;
+$btn_tertiary--transition: "" !default;
+
 //hover and focus
 $btn_tertiaryPhover--font: ()
 !default;
@@ -251,5 +267,15 @@ $btn_xl--font: (
 $btn_xl--padding: (
   topBottom: $mdPaddingTopBottom * $btnXl,
   leftRight: $mdPaddingLeftRight * $btnXl
+)
+!default;
+
+//btn_busy
+$btn_busy--loader: (
+  size          : 1.4rem,
+  primaryColor  : rgba(#fff,0.5),
+  secondaryColor: #fff,
+  thickness     : 0.2rem,
+  speed         : 1s
 )
 !default;

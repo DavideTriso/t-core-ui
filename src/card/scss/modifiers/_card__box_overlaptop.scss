@@ -1,0 +1,8 @@
+.card__box_overlaptop {
+  position: absolute;
+  top     : $card__box_overlaptop--top;
+  left    : 0;
+  width   : 100%;
+  @include background($card__box_overlaptop--background);
+  @include border($card__box_overlaptop--border);
+}

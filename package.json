@@ -18,6 +18,6 @@
     "require-dir": "^0.3.2"
   },
   "dependencies": {
-    "t-css-framework": "^1.1.3"
+    "t-css-framework": "1.2.0"
   }
 }

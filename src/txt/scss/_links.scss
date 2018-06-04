@@ -1,0 +1,25 @@
+#{$txtClassName} {
+  a {
+    @include font($a--font);
+    @include text($a--text);
+    @include typography($a--typography);
+    @include border($a--border);
+    @include background($a--background);
+    @include outline($a--outline);
+    transition: $a--transition;
+
+    &:active,
+    &:focus,
+    &:hover {
+      @include font($aPhover--font);
+      @include text($aPhover--text);
+      @include typography($aPhover--typography);
+      @include border($aPhover--border);
+      @include background($aPhover--background);
+    }
+
+    &:focus {
+      @include outline($aPfocus--outline);
+    }
+  }
+}
