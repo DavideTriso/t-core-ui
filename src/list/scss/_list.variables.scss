@@ -1,0 +1,144 @@
+$list--padding: (
+  top   : 0.3rem,
+  bottom: 0.3rem,
+)
+!default;
+$list--font: ()
+!default;
+$list--text: ()
+!default;
+$list--typography: ()
+!default;
+$list--border: ()
+!default;
+$list--background: ()
+!default;
+$list--list: (
+  listStylePosition: outside
+)
+!default;
+
+//ELEMENTS
+//item
+$list__item--padding: ()
+!default;
+$list__item--margin: ()
+!default;
+
+//MODIFIERS
+//dotted
+$list_dotted--padding: (
+  left : 1rem,
+  right: 0
+)
+!default;
+$list_dotted--font: ()
+!default;
+$list_dotted--text: ()
+!default;
+$list_dotted--typography: ()
+!default;
+$list_dotted--border: ()
+!default;
+$list_dotted--background: ()
+!default;
+$list_dotted--list: (
+  listStyleType: disc
+)
+!default;
+
+//numbered
+$list_numbered--padding: (
+  left : 1rem,
+  right: 0
+)
+!default;
+$list_numbered--font: ()
+!default;
+$list_numbered--text: ()
+!default;
+$list_numbered--typography: ()
+!default;
+$list_numbered--border: ()
+!default;
+$list_numbered--background: ()
+!default;
+$list_numbered--list: (
+  listStyleType: decimal
+)
+!default;
+
+//icon
+$list_icon--padding: (
+  left : 1rem,
+  right: 0
+)
+!default;
+$list_icon--font: ()
+!default;
+$list_icon--text: ()
+!default;
+$list_icon--typography: ()
+!default;
+$list_icon--border: ()
+!default;
+$list_icon--background: ()
+!default;
+$list_icon--list: ()
+!default;
+//elements
+$list__icon_icon--left: 0 !default;
+$list__icon_icon--margin: (
+  left: -1rem
+)
+!default;
+
+//list inline
+$list_inline--padding: (
+  left : 0,
+  right: 0
+)
+!default;
+$list_inline--border: ()
+!default;
+$list_inline--background: ()
+!default;
+//elements
+$list__item_inline--margin: (
+  right: 0.3rem
+)
+!default;
+
+//list bordered
+
+$list_bordered--border: (
+  borderRadius: 0.3rem,
+  borderColor : #d0d0d0,
+  borderStyle : solid,
+  borderWidth : 0.05rem
+)
+!default;
+$list_bordered--padding: (
+  all: 0
+)
+!default;
+$list_bordered--background: (
+  backgroundColor: #f6f6f6
+)
+!default;
+//elements
+$list__item_bordered--border: (
+  borderColor: #d0d0d0,
+  borderStyle: solid,
+  borderWidth: 0 0 0.05rem 0
+)
+!default;
+$list__item_bordered--padding: (
+  topBottom: 0.25rem,
+  leftRight: 0.5rem
+)
+!default;
+$list__item_bordered--text: ()
+!default;
+$list__item_bordered--typography: ()
+!default;

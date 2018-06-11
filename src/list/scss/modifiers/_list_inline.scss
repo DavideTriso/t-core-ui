@@ -1,0 +1,10 @@
+.list_inline {
+  @include padding($list_inline--padding);
+  @include border($list_inline--border);
+  @include background($list_inline--background);
+
+  .list__item {
+    display: inline-block;
+    @include margin($list__item_inline--margin);
+  }
+}

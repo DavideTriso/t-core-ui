@@ -1,0 +1,16 @@
+.list_bordered {
+  @include border ($list_bordered--border);
+  @include background($list_bordered--background);
+  @include padding($list_bordered--padding);
+
+  .list__item {
+    @include padding($list__item_bordered--padding);
+    @include border ($list__item_bordered--border);
+    @include text($list__item_bordered--text);
+    @include typography($list__item_bordered--typography);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

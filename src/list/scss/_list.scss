@@ -1,0 +1,10 @@
+.list {
+  display: block;
+  @include padding($list--padding);
+  @include font($list--font);
+  @include text($list--text);
+  @include typography($list--typography);
+  @include border($list--border);
+  @include background($list--background);
+  @include list($list--list);
+}

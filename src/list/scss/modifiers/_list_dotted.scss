@@ -1,0 +1,10 @@
+.list_dotted {
+  display: block;
+  @include padding($list_dotted--padding);
+  @include font($list_dotted--font);
+  @include text($list_dotted--text);
+  @include typography($list_dotted--typography);
+  @include border($list_dotted--border);
+  @include background($list_dotted--background);
+  @include list($list_dotted--list);
+}

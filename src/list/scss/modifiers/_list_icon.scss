@@ -1,0 +1,16 @@
+.list_icon {
+  display: block;
+  @include padding($list_icon--padding);
+  @include font($list_icon--font);
+  @include text($list_icon--text);
+  @include typography($list_icon--typography);
+  @include border($list_icon--border);
+  @include background($list_icon--background);
+  @include list($list_icon--list);
+
+  .list__icon {
+    position: absolute;
+    left    : $list__icon_icon--left;
+  }
+
+}

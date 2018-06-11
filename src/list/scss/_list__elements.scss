@@ -1,0 +1,4 @@
+.list__item {
+  @include padding($list__item--padding);
+  @include padding($list__item--margin);
+}

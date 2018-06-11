@@ -1,0 +1,10 @@
+.list_numbered {
+  display: block;
+  @include padding($list_numbered--padding);
+  @include font($list_numbered--font);
+  @include text($list_numbered--text);
+  @include typography($list_numbered--typography);
+  @include border($list_numbered--border);
+  @include background($list_numbered--background);
+  @include list($list_numbered--list);
+}
