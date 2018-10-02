@@ -1,12 +1,18 @@
 $txtClassName: ".txt";
 
+//the breakpoints
 $tabletMinWidth: 767px !default;
 $desktopMinWidth: 1200px !default;
+//different font sizes can be defined for the running text wrapper element.
+//because the font size of all the wrapper's children are defined in em,
+//the entire content will scale accordingly
+//To override this scaling behaviour for one element, use rem instead of em for it;s font-size
 $txtFontSize: 1rem;
 $tablet--txtFontSize: 1.05rem;
 $desktop--txtFontSize: 1.1rem;
 
 //HEADINGS
+//the fallback values are used when no specific value for the element is defined
 $h-fallback--font: ()
 !default;
 $h-fallback--text: ()

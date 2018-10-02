@@ -9,6 +9,17 @@ Core UI Components for [T](https://github.com/DavideTriso/t-css-framework).
 
 * Breadcrumb
 * Button (btn)
+* Card
+* Embedded
+* Heading
+* Image (img)
+* Link
+* List
+* Pagination
+* Table (@TODO)
+* Running text (txt)
+* Well
+
 
 
 ## DEPENDENCIES

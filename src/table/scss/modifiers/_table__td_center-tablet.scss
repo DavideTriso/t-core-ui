@@ -1,0 +1,5 @@
+.table__td_center-tablet {
+    @include mqMin($tableTabletWidth) {
+        text-align: center;
+    }
+}

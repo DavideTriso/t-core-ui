@@ -8,6 +8,11 @@
   @include background($list_icon--background);
   @include list($list_icon--list);
 
+  .list__item {
+    position: relative;
+    @include padding($list__item_icon--padding);
+  }
+
   .list__icon {
     position: absolute;
     left    : $list__icon_icon--left;

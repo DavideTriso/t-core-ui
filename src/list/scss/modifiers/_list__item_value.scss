@@ -1,0 +1,12 @@
+.list__item_value {
+  display: inline;
+  @include font($list__item_value--font);
+  @include text($list__item_value--text);
+  @include typography($list__item_value--typography);
+
+  &:after {
+    content: "";
+    display: block;
+    height : $list__item_valuePafter--height;
+  }
+}

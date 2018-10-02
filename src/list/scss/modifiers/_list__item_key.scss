@@ -1,1 +1,9 @@
-s
+.list__item_key {
+  display    : inline-block;
+  width      : auto;
+  margin-left: -$list_keyvalue--indent;
+  @include padding($list__item_key--padding);
+  @include font($list__item_key--font);
+  @include text($list__item_key--text);
+  @include typography($list__item_key--typography);
+}

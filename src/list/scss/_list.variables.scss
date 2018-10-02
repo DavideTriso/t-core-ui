@@ -70,8 +70,8 @@ $list_numbered--list: (
 
 //icon
 $list_icon--padding: (
-  left : 1rem,
-  right: 0
+  top   : 0.3rem,
+  bottom: 0.3rem
 )
 !default;
 $list_icon--font: ()
@@ -92,6 +92,11 @@ $list__icon_icon--margin: (
   left: -1rem
 )
 !default;
+$list__item_icon--padding: (
+  left : 1rem,
+  right: 0
+)
+!default;
 
 //list inline
 $list_inline--padding: (
@@ -109,8 +114,35 @@ $list__item_inline--margin: (
 )
 !default;
 
-//list bordered
+//list keyvalue
+$list_keyvalue--indent: 1rem !default;
 
+//elements
+$list__item_key--padding: (
+  right: 0.2rem
+)
+!default;
+$list__item_key--font: (
+  fontWeight: 600
+)
+!default;
+$list__item_key--text: ()
+!default;
+$list__item_key--typography: ()
+!default;
+$list__item_value--font: (
+  fontStyle: italic
+)
+!default;
+$list__item_value--text: (
+  color: #424242
+)
+!default;
+$list__item_value--typography: ()
+!default;
+$list__item_valuePafter--height: 0.3rem !default;
+
+//list bordered
 $list_bordered--border: (
   borderRadius: 0.3rem,
   borderColor : #d0d0d0,

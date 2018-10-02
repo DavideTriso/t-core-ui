@@ -1,388 +1,439 @@
 <!doctype html>
 <html>
 
-<head>
-  <title>T core ui</title>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="t-core-ui.css" />
-</head>
+  <head>
+    <title>T core ui</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="t-core-ui.css" />
+  </head>
 
-<body>
-  <h1>T CORE UI</h1>
+  <body>
+    <h1>T CORE UI</h1>
 
-  <h2>Breadcrumb</h2>
-  <!--BREADCRUMB WITH HEADING -->
-  <nav class="breadcrumb" aria-labelledby="breadcrumb__heading--1">
-    <h2 class="breadcrumb__heading" id="breadcrumb__heading--1">You are here:</h2>
-    <ol class="breadcrumb__trail">
-      <li class="breadcrumb__item">
-        <a href="#" class="breadcrumb__link">Home</a>
-      </li>
-      <li class="breadcrumb__item">
-        <a href="#" class="breadcrumb__link">UI components</a>
-      </li>
-      <li class="breadcrumb__item">
-        <a class="breadcrumb__link breadcrumb__link_current" aria-current="page">Breadcrumb</a>
-      </li>
-    </ol>
-  </nav>
+    <h2>Breadcrumb</h2>
+    <!--BREADCRUMB WITH HEADING -->
+    <nav class="breadcrumb" aria-labelledby="breadcrumb__heading--1">
+      <h2 class="breadcrumb__heading" id="breadcrumb__heading--1">You are here:</h2>
+      <ol class="breadcrumb__trail">
+        <li class="breadcrumb__item">
+          <a href="#" class="breadcrumb__link">Home</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a href="#" class="breadcrumb__link">UI components</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link breadcrumb__link_current" aria-current="page">Breadcrumb</a>
+        </li>
+      </ol>
+    </nav>
 
-  <!--BREADCRUMB WITHOUT HEADING -->
-  <nav class="breadcrumb">
-    <ol class="breadcrumb__trail">
-      <li class="breadcrumb__item">
-        <a href="#" class="breadcrumb__link">Home</a>
-      </li>
-      <li class="breadcrumb__item">
-        <a href="#" class="breadcrumb__link">UI components</a>
-      </li>
-      <li class="breadcrumb__item">
-        <a class="breadcrumb__link breadcrumb__link_current" aria-current="page">Breadcrumb</a>
-      </li>
-    </ol>
-  </nav>
-  <br />
-  <br />
-  <button class="btn" type="button">Button</button>
-  <button class="btn btn_primary" type="button">Button primary</button>
-  <button class="btn btn_secondary" type="button">Button secondary</button>
-  <button class="btn btn_tertiary" type="button">Button tertiary</button>
-  <br />
-  <br />
-  <button class="btn btn_primary" type="button">
-    <span class="btn__icon">&larr;</span>
-    <span class="btn__txt">Button with icon</span>
-  </button>
+    <!--BREADCRUMB WITHOUT HEADING -->
+    <nav class="breadcrumb">
+      <ol class="breadcrumb__trail">
+        <li class="breadcrumb__item">
+          <a href="#" class="breadcrumb__link">Home</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a href="#" class="breadcrumb__link">UI components</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link breadcrumb__link_current" aria-current="page">Breadcrumb</a>
+        </li>
+      </ol>
+    </nav>
+    <br />
+    <br />
+    <button class="btn" type="button">Button</button>
+    <button class="btn btn_primary" type="button">Button primary</button>
+    <button class="btn btn_secondary" type="button">Button secondary</button>
+    <button class="btn btn_tertiary" type="button">Button tertiary</button>
+    <br />
+    <br />
+    <button class="btn btn_primary" type="button">
+      <span class="btn__icon">&larr;</span>
+      <span class="btn__txt">Button with icon</span>
+    </button>
 
-  <button class="btn btn_primary" type="button">
-    <span class="btn__txt">Button with icon</span>
-    <span class="btn__icon">&rarr;</span>
-  </button>
-  <br />
-  <br />
-
-
-  <button class="btn btn_secondary" type="button" disabled>
-    <span class="btn__txt">Button disabled</span>
-    <span class="btn__icon">&rarr;</span>
-  </button>
-  <br />
-  <br />
-  <button class="btn btn_primary btn_busy" type="button">
-    <span class="btn__loader"></span>
-    <span class="btn__txt">Button busy</span>
-    <span class="btn__icon">&rarr;</span>
-  </button>
-  <button class="btn btn_busy" type="button">
-    <span class="btn__loader"></span>
-    Button busy
-  </button>
-
-  <br />
-  <br />
-  <!--SIZES-->
-  <button class="btn btn_primary btn_xs" type="button">
-    <span class="btn__txt">Button xs</span>
-    <span class="btn__icon">&rarr;</span>
-  </button>
-
-  <button class="btn btn_primary btn_sm" type="button">
-    <span class="btn__txt">Button sm</span>
-    <span class="btn__icon">&rarr;</span>
-  </button>
-
-  <button class="btn btn_primary" type="button">
-    <span class="btn__txt">Button (default - no modifier)</span>
-    <span class="btn__icon">&rarr;</span>
-  </button>
-
-  <button class="btn btn_primary btn_lg" type="button">
-    <span class="btn__txt">Button lg</span>
-    <span class="btn__icon">&rarr;</span>
-  </button>
-
-  <button class="btn btn_primary btn_xl" type="button">
-    <span class="btn__txt">Button xl</span>
-    <span class="btn__icon">&rarr;</span>
-  </button>
-  <br />
-  <br />
-  <button class="btn btn_primary btn_full" type="button">
-    Button full
-  </button>
+    <button class="btn btn_primary" type="button">
+      <span class="btn__txt">Button with icon</span>
+      <span class="btn__icon">&rarr;</span>
+    </button>
+    <br />
+    <br />
 
 
-  <!-- PAGINATION -->
-  <nav class="pagination" role="navigation" aria-label="Pagination Navigation">
+    <button class="btn btn_secondary" type="button" disabled>
+      <span class="btn__txt">Button disabled</span>
+      <span class="btn__icon">&rarr;</span>
+    </button>
+    <br />
+    <br />
+    <button class="btn btn_primary btn_busy" type="button">
+      <span class="btn__loader"></span>
+      <span class="btn__txt">Button busy</span>
+      <span class="btn__icon">&rarr;</span>
+    </button>
+    <button class="btn btn_busy" type="button">
+      <span class="btn__loader"></span>
+      Button busy
+    </button>
+
+    <br />
+    <br />
+    <!--SIZES-->
+    <button class="btn btn_primary btn_xs" type="button">
+      <span class="btn__txt">Button xs</span>
+      <span class="btn__icon">&rarr;</span>
+    </button>
+
+    <button class="btn btn_primary btn_sm" type="button">
+      <span class="btn__txt">Button sm</span>
+      <span class="btn__icon">&rarr;</span>
+    </button>
+
+    <button class="btn btn_primary" type="button">
+      <span class="btn__txt">Button (default - no modifier)</span>
+      <span class="btn__icon">&rarr;</span>
+    </button>
+
+    <button class="btn btn_primary btn_lg" type="button">
+      <span class="btn__txt">Button lg</span>
+      <span class="btn__icon">&rarr;</span>
+    </button>
+
+    <button class="btn btn_primary btn_xl" type="button">
+      <span class="btn__txt">Button xl</span>
+      <span class="btn__icon">&rarr;</span>
+    </button>
+    <br />
+    <br />
+    <button class="btn btn_primary btn_full" type="button">
+      Button full
+    </button>
+
+
+    <!-- PAGINATION -->
+    <nav class="pagination" role="navigation" aria-label="Pagination Navigation">
       <ul class="pagination__list">
-          <li class="pagination__entry">
-              <a href="#" rel="prev" class="pagination__link pagination__link_prev" aria-label="Go to previous page" title="Go to previous page">
-                  <span role="none presentation">&lt;</span>
-              </a>
-          </li>
-          <li class="pagination__entry">
-              <a href="#" class="pagination__link" aria-label="Go to page X" title="Go to page X">
-                  <span role="none presentation">1</span>
-              </a>
-          </li>
-          <li class="pagination__entry">
-              <a href="#" class="pagination__link" aria-label="Go to page X" title="Go to page X">
-                  <span role="none presentation">2</span>
-              </a>
-          </li>
-          <li class="pagination__entry">
-              <a class="pagination__link pagination__link_current" aria-label="Current page, page 3" aria-current="page" title="Current page">
-                  <span role="none presentation">3</span>
-              </a>
-          </li>
-          <li class="pagination__entry">
-              <a href="#" class="pagination__link" aria-label="Go to page X" title="Go to page X">
-                  <span role="none presentation">4</span>
-              </a>
-          </li>
-          <li class="pagination__entry">
-              <a href="#" class="pagination__link" aria-label="Go to page X"title="Go to page X" >
-                  <span role="none presentation">5</span>
-              </a>
-          </li>
-          <li class="pagination__entry">
-              <a href="#" rel="next" class="pagination__link pagination__link_next" aria-label="Go to next page" title="Go to next page">
-                  <span role="none presentation">&gt; </span>
-              </a>
-          </li>
+        <li class="pagination__entry">
+          <a href="#" rel="prev" class="pagination__link pagination__link_prev" aria-label="Go to previous page" title="Go to previous page">
+            <span role="none presentation">&lt;</span>
+          </a>
+        </li>
+        <li class="pagination__entry">
+          <a href="#" class="pagination__link" aria-label="Go to page X" title="Go to page X">
+            <span role="none presentation">1</span>
+          </a>
+        </li>
+        <li class="pagination__entry">
+          <a href="#" class="pagination__link" aria-label="Go to page X" title="Go to page X">
+            <span role="none presentation">2</span>
+          </a>
+        </li>
+        <li class="pagination__entry">
+          <a class="pagination__link pagination__link_current" aria-label="Current page, page 3" aria-current="page"
+            title="Current page">
+            <span role="none presentation">3</span>
+          </a>
+        </li>
+        <li class="pagination__entry">
+          <a href="#" class="pagination__link" aria-label="Go to page X" title="Go to page X">
+            <span role="none presentation">4</span>
+          </a>
+        </li>
+        <li class="pagination__entry">
+          <a href="#" class="pagination__link" aria-label="Go to page X" title="Go to page X">
+            <span role="none presentation">5</span>
+          </a>
+        </li>
+        <li class="pagination__entry">
+          <a href="#" rel="next" class="pagination__link pagination__link_next" aria-label="Go to next page" title="Go to next page">
+            <span role="none presentation">&gt; </span>
+          </a>
+        </li>
       </ul>
-  </nav>
+    </nav>
 
-  <br />
+    <br />
 
-  <div class="well">
-    <div class="well__box">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <div class="well">
+      <div class="well__box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum</p>
+      </div>
     </div>
-  </div>
-  <br />
+    <br />
 
-  <div class="well well_primary">
-    <div class="well__box">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <div class="well well_primary">
+      <div class="well__box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum</p>
+      </div>
     </div>
-  </div>
-  <br />
+    <br />
 
-  <div class="well well_secondary">
-    <div class="well__box">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <div class="well well_secondary">
+      <div class="well__box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum</p>
+      </div>
     </div>
-  </div>
-<br />
-  <div class="well well_tertiary">
-    <div class="well__box">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <br />
+    <div class="well well_tertiary">
+      <div class="well__box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum</p>
+      </div>
     </div>
-  </div>
-</br />
-<br />
-<h1 class="heading">Default heading</h1>
-<h2 class="heading heading_primary">Heading primary</h2>
-<h2 class="heading heading_secondary">Heading secondary</h2>
-<h2 class="heading heading_tertiary">Heading tertiary</h2>
-<br />
-<br />
-<h2 class="heading heading_xs">Heading xs</h2>
-<h2 class="heading heading_sm">Heading sm</h2>
-<h2 class="heading ">Heading default</h2>
-<h2 class="heading heading_lg">Heading lg</h2>
-<h2 class="heading heading_xl">Heading xl</h2>
-<br />
-<br />
-<h2 class="heading heading_xs heading_responsive">Heading xs responsive</h2>
-<h2 class="heading heading_sm heading_responsive">Heading sm responsive</h2>
-<h2 class="heading heading_responsive">Heading default responsive</h2>
-<h2 class="heading heading_lg heading_responsive">Heading lg responsive</h2>
-<h2 class="heading heading_xl heading_responsive">Heading xl responsive</h2>
-<br />
-<br />
-<h2 class="heading heading_xs heading_fluidsize">Heading xs fluid sizing</h2>
-<h2 class="heading heading_sm heading_fluidsize">Heading sm fluid sizing</h2>
-<h2 class="heading heading_fluidsize">Heading default fluid sizing</h2>
-<h2 class="heading heading_lg heading_fluidsize">Heading lg fluid sizing</h2>
-<h2 class="heading heading_xl heading_fluidsize">Heading xl fluid sizing</h2>
-<br />
-<br />
-<h1 class="heading">Default heading <span class="heading__sub">heading subtitle</span></h1>
-<br />
-<br />
-<!--CARD-->
-<section class="card" style="max-width: 15rem">
-  <header class="card__box">
-    <h2 class="hading heading_sm"><a href="#">Card</a></h2>
-  </header>
-  <a class="card__box" href="#">
-    <img src="img-portrait.jpg" class="img" alt="Go to this aweseome page" />
-  </a>
-  <div class="card__box">
-    <p>Card box accepts any text and image content. Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-  </div>
-  <div class="card__box">
-    <a class="btn btn_full btn_primary" href="#">Click me </a>
-  </div>
-</section>
-<br />
-<br />
-<section class="card card_primary" style="max-width: 15rem">
-  <header class="card__box">
-    <h2 class="hading heading_sm"><a href="#">Card primary</a></h2>
-  </header>
-  <a class="card__box" href="#">
-    <img src="img-portrait.jpg" class="img" alt="Go to this aweseome page" />
-  </a>
-  <div class="card__box">
-    <p>Card box accepts any text and image content. Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-  </div>
-  <div class="card__box">
-    <a class="btn btn_full btn_primary" href="#">Click me </a>
-  </div>
-</section>
-<br />
-<br />
-<section class="card card_secondary" style="max-width: 15rem">
-  <header class="card__box">
-    <h2 class="hading heading_sm"><a href="#">Card secondary</a></h2>
-  </header>
-  <a class="card__box" href="#">
-    <img src="img-portrait.jpg" class="img" alt="Go to this aweseome page" />
-  </a>
-  <div class="card__box">
-    <p>Card box accepts any text and image content. Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-  </div>
-  <div class="card__box">
-    <a class="btn btn_full btn_primary" href="#">Click me </a>
-  </div>
-</section>
-<br />
-<br />
-<section class="card card_tertiary" style="max-width: 15rem">
-  <header class="card__box card__box_overlaptop">
-    <h2 class="hading heading_sm"><a href="#">Card tertiary</a></h2>
-  </header>
-  <a class="card__box" href="#">
-    <img src="img-portrait.jpg" class="img" alt="Go to this aweseome page" />
-  </a>
-  <div class="card__box card__box_overlapbottom">
-    <a class="btn btn_full btn_primary" href="#">Click me </a>
-  </div>
-</section>
+    </br />
+    <br />
+    <h1 class="heading">Default heading</h1>
+    <h2 class="heading heading_primary">Heading primary</h2>
+    <h2 class="heading heading_secondary">Heading secondary</h2>
+    <h2 class="heading heading_tertiary">Heading tertiary</h2>
+    <br />
+    <br />
+    <h2 class="heading heading_xs">Heading xs</h2>
+    <h2 class="heading heading_sm">Heading sm</h2>
+    <h2 class="heading ">Heading default</h2>
+    <h2 class="heading heading_lg">Heading lg</h2>
+    <h2 class="heading heading_xl">Heading xl</h2>
+    <br />
+    <br />
+    <h2 class="heading heading_xs heading_responsive">Heading xs responsive</h2>
+    <h2 class="heading heading_sm heading_responsive">Heading sm responsive</h2>
+    <h2 class="heading heading_responsive">Heading default responsive</h2>
+    <h2 class="heading heading_lg heading_responsive">Heading lg responsive</h2>
+    <h2 class="heading heading_xl heading_responsive">Heading xl responsive</h2>
+    <br />
+    <br />
+    <h2 class="heading heading_xs heading_fluidsize">Heading xs fluid sizing</h2>
+    <h2 class="heading heading_sm heading_fluidsize">Heading sm fluid sizing</h2>
+    <h2 class="heading heading_fluidsize">Heading default fluid sizing</h2>
+    <h2 class="heading heading_lg heading_fluidsize">Heading lg fluid sizing</h2>
+    <h2 class="heading heading_xl heading_fluidsize">Heading xl fluid sizing</h2>
+    <br />
+    <br />
+    <h1 class="heading">Default heading <span class="heading__sub">heading subtitle</span></h1>
+    <br />
+    <br />
+    <!--CARD-->
+    <section class="card" style="max-width: 15rem">
+      <header class="card__box">
+        <h2 class="hading heading_sm"><a href="#">Card</a></h2>
+      </header>
+      <a class="card__box" href="#">
+        <img src="img-portrait.jpg" class="img" alt="Go to this aweseome page" />
+      </a>
+      <div class="card__box">
+        <p>Card box accepts any text and image content. Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      </div>
+      <div class="card__box">
+        <a class="btn btn_full btn_primary" href="#">Click me </a>
+      </div>
+    </section>
+    <br />
+    <br />
+    <section class="card card_primary" style="max-width: 15rem">
+      <header class="card__box">
+        <h2 class="hading heading_sm"><a href="#">Card primary</a></h2>
+      </header>
+      <a class="card__box" href="#">
+        <img src="img-portrait.jpg" class="img" alt="Go to this aweseome page" />
+      </a>
+      <div class="card__box">
+        <p>Card box accepts any text and image content. Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      </div>
+      <div class="card__box">
+        <a class="btn btn_full btn_primary" href="#">Click me </a>
+      </div>
+    </section>
+    <br />
+    <br />
+    <section class="card card_secondary" style="max-width: 15rem">
+      <header class="card__box">
+        <h2 class="hading heading_sm"><a href="#">Card secondary</a></h2>
+      </header>
+      <a class="card__box" href="#">
+        <img src="img-portrait.jpg" class="img" alt="Go to this aweseome page" />
+      </a>
+      <div class="card__box">
+        <p>Card box accepts any text and image content. Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      </div>
+      <div class="card__box">
+        <a class="btn btn_full btn_primary" href="#">Click me </a>
+      </div>
+    </section>
+    <br />
+    <br />
+    <section class="card card_tertiary" style="max-width: 15rem">
+      <header class="card__box card__box_overlaptop">
+        <h2 class="hading heading_sm"><a href="#">Card tertiary</a></h2>
+      </header>
+      <a class="card__box" href="#">
+        <img src="img-portrait.jpg" class="img" alt="Go to this aweseome page" />
+      </a>
+      <div class="card__box card__box_overlapbottom">
+        <a class="btn btn_full btn_primary" href="#">Click me </a>
+      </div>
+    </section>
 
-<br />
-<br />
-<a href="#" class="link">Default link</a>
-<a href="#" class="link link_primary">Link primary</a>
-<a href="#" class="link link_secondary">Link secondary</a>
-<a href="#" class="link link_tertiary">Link tertiary</a>
+    <br />
+    <br />
+    <a href="#" class="link">Default link</a>
+    <a href="#" class="link link_primary">Link primary</a>
+    <a href="#" class="link link_secondary">Link secondary</a>
+    <a href="#" class="link link_tertiary">Link tertiary</a>
 
-<a href="#" class="link">Link with icon <span class="link__icon">&rarr;</span></a>
-<a href="#" class="link"><span class="link__icon">&larr;</span> Link with icon</a>
+    <a href="#" class="link">Link with icon <span class="link__icon">&rarr;</span></a>
+    <a href="#" class="link"><span class="link__icon">&larr;</span> Link with icon</a>
 
-<br />
-<br />
-<!--LIST-->
-<ul class="list">
- <li class="list__item">Default list item one</li>
- <li class="list__item">Another default list item</li>
- <li class="list__item">Default list item three</li>
-</ul>
+    <br />
+    <br />
+    <!--LIST-->
+    <ul class="list">
+      <li class="list__item">Default list item one</li>
+      <li class="list__item">Another default list item</li>
+      <li class="list__item">Default list item three</li>
+    </ul>
 
-<ul class="list list_inline">
- <li class="list__item">Inline list item one</li>
- <li class="list__item">Another inline list item</li>
- <li class="list__item">Last inline list item</li>
-</ul>
+    <ul class="list list_inline">
+      <li class="list__item">Inline list item one</li>
+      <li class="list__item">Another inline list item</li>
+      <li class="list__item">Last inline list item</li>
+    </ul>
 
-<ul class="list list_dotted">
-  <li class="list__item">Dotted list item one</li>
-  <li class="list__item">Another dotted list item</li>
-  <li class="list__item">Dotted list item three</li>
-</ul>
+    <ul class="list list_dotted">
+      <li class="list__item">Dotted list item one</li>
+      <li class="list__item">Another dotted list item</li>
+      <li class="list__item">Dotted list item three</li>
+    </ul>
 
-<ul class="list list_numbered">
-  <li class="list__item">Numbered list item one</li>
-  <li class="list__item">Another numbered list item</li>
-  <li class="list__item">Numbered list item three</li>
-</ul>
+    <ul class="list list_numbered">
+      <li class="list__item">Numbered list item one</li>
+      <li class="list__item">Another numbered list item</li>
+      <li class="list__item">Numbered list item three</li>
+    </ul>
 
-<ul class="list list_icon">
- <li class="list__item">
-  <span class="list__icon">
-    &rarr;
-  </span>
-  <span class="list__text">Text</span>
- </li>
- <li class="list__item">
-  <span class="list__icon">
-    &larr;
-  </span>
-  <span class="list__text">Text</span>
- </li>
- <li class="list__item">
-  <span class="list__icon">
-    &bull;
-  </span>
-  <span class="list__text">Text</span>
- </li>
-</ul>
-
-
-<ul class="list list_bordered">
- <li class="list__item">Text</li>
- <li class="list__item list__item">Text</li>
- <li class="list__item">Text</li>
-</ul>
-
-<dl class="list">
- <dt class="list__item list__item_key">term</dt>
- <dd calss="list__item list__item_value">Definition of the term</dd>
- <dt class="list__item list__item_key">term</dt>
- <dd calss="list__item list__item_value">Definition of the term</dd>
- <dt class="list__item list__item_key">term</dt>
- <dd calss="list__item list__item_value">Definition of the term</dd>
-</dl>
+    <ul class="list list_icon">
+      <li class="list__item">
+        <span class="list__icon">
+          &rarr;
+        </span>
+        <span class="list__text">Icon list first item</span>
+      </li>
+      <li class="list__item">
+        <span class="list__icon">
+          &larr;
+        </span>
+        <span class="list__text">Icon list second item</span>
+      </li>
+      <li class="list__item">
+        <span class="list__icon">
+          &bull;
+        </span>
+        <span class="list__text">Icon list third item</span>
+      </li>
+    </ul>
 
 
-<dl class="list">
- <dt class="list__item list__item_key list__item_key-inline">term</dt>
- <dd calss="list__item list__item_value">Definition of the term</dd>
- <dt class="list__item list__item_key list__item_key-inline">term</dt>
- <dd calss="list__item list__item_value">Definition of the term</dd>
- <dt class="list__item list__item_key list__item_key-inline">term</dt>
- <dd calss="list__item list__item_value">Definition of the term</dd>
-</dl>
+    <ul class="list list_bordered">
+      <li class="list__item">Bordered list first item</li>
+      <li class="list__item list__item">Bordered list item number two</li>
+      <li class="list__item">Border list last item</li>
+    </ul>
 
+    <ul class="list list_bordered list_centered">
+      <li class="list__item">Bordered list & centered first item</li>
+      <li class="list__item list__item">Bordered list & centered item number two</li>
+      <li class="list__item">Border list & centered last item</li>
+    </ul>
 
-<dl class="list">
- <dt class="list__item list__item_key">term</dt>
- <dd calss="list__item list__item_value list__item_indent">Definition of the term</dd>
- <dt class="list__item list__item_key">term</dt>
- <dd calss="list__item list__item_value list__item_indent">Definition of the term</dd>
- <dt class="list__item list__item_key">term</dt>
- <dd calss="list__item list__item_value list__item_indent">Definition of the term</dd>
-</dl>
+    <dl class="list list_keyvalue">
+      <dt class="list__item list__item_key">Lorem ipsum</dt>
+      <dd class="list__item list__item_value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</dd>
+      <dt class="list__item list__item_key">Dolor</dt>
+      <dd class="list__item list__item_value"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat.</dd>
+      <dt class="list__item list__item_key">Sit amet</dt>
+      <dd class="list__item list__item_value"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.</dd>
+    </dl>
 
+    <dl class="list list_keyvalue">
+      <dt class="list__item list__item_key">term</dt>
+      <dd class="list__item list__item_value list__item_indent">Definition of the term</dd>
+      <dt class="list__item list__item_key">term</dt>
+      <dd class="list__item list__item_value list__item_indent">Definition of the term</dd>
+      <dt class="list__item list__item_key">term</dt>
+      <dd class="list__item list__item_value list__item_indent">Definition of the term</dd>
+    </dl>
 
-<dl class="list list_border">
- <dt class="list__item list__item_key">term</dt>
- <dd calss="list__item list__item_value">Definition of the term</dd>
- <dt class="list__item list__item_key">term</dt>
- <dd calss="list__item list__item_value">Definition of the term</dd>
- <dt class="list__item list__item_key">term</dt>
- <dd calss="list__item list__item_value">Definition of the term</dd>
-</dl>
+    <dl class="list list_border list_keyvalue">
+      <dt class="list__item list__item_key">term</dt>
+      <dd class="list__item list__item_value">Definition of the term</dd>
+      <dt class="list__item list__item_key">term</dt>
+      <dd class="list__item list__item_value">Definition of the term</dd>
+      <dt class="list__item list__item_key">term</dt>
+      <dd class="list__item list__item_value">Definition of the term</dd>
+    </dl>
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-</body>
+    <br />
+    <br />
+    <br />
+    <div class="table">
+      <table class="table__table">
+        <caption class="table__caption"">Table caption</caption>
+        <thead class=" table__thead">
+        <tr class="table__tr">
+          <th class="table__th">col 1</th>
+          <th class="table__th">col 2</th>
+          <th class="table__th">col 3</th>
+          <th class="table__th">col 4</th>
+          <th class="table__th">col 5</th>
+          <th class="table__th">col 6</th>
+          <th class="table__th">col 7</th>
+          <th class="table__th">col 8</th>
+          <th class="table__th">col 9</th>
+        </tr>
+        </thead>
+        <tfoot class="table__tfoot">
+          <tr class="table__tr">
+            <td class="table__td" colspan="9">Hello world 100,00</td>
+          </tr>
+        </tfoot>
+        <tbody class=" table__tbody">
+          <tr class="table__tr">
+            <td class="table__td table__td_center">Lorem ipsum dolor sit amet consectetur adiscipli elit.</td>
+            <td class="table__td">Lorem ipsum dolor sit amet consectetur adiscipli elit.</td>
+            <td class="table__td">Lorem ipsum dolor sit amet consectetur adiscipli elit.</td>
+            <td class="table__td">Lorem ipsum dolor sit amet consectetur adiscipli elit.</td>
+            <td class="table__td">Lorem ipsum dolor sit amet consectetur adiscipli elit.</td>
+            <td class="table__td">Lorem ipsum dolor sit amet consectetur adiscipli elit.</td>
+            <td class="table__td">Lorem ipsum dolor sit amet consectetur adiscipli elit.</td>
+            <td class="table__td">Lorem ipsum dolor sit amet consectetur adiscipli elit.</td>
+            <td class="table__td">Lorem ipsum dolor sit amet consectetur adiscipli elit.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+    <br />
+    <br />
+  </body>
 
 </html>

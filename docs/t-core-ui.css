@@ -175,6 +175,7 @@ picture {
   margin: 0;
   padding: 0;
   height: auto;
+  max-width: 100%;
   width: 100%;
 }
 
@@ -828,6 +829,11 @@ var {
 
 .list_icon {
   display: block;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+}
+.list_icon .list__item {
+  position: relative;
   padding-left: 1rem;
   padding-right: 0;
 }
@@ -861,6 +867,33 @@ var {
 }
 .list_bordered .list__item:last-child {
   border-bottom: none;
+}
+
+.list_keyvalue {
+  padding-left: 1rem;
+}
+
+.list_centered {
+  text-align: center;
+}
+
+.list__item_key {
+  display: inline-block;
+  width: auto;
+  margin-left: -1rem;
+  padding-right: 0.2rem;
+  font-weight: 600;
+}
+
+.list__item_value {
+  display: inline;
+  font-style: italic;
+  color: #424242;
+}
+.list__item_value:after {
+  content: "";
+  display: block;
+  height: 0.3rem;
 }
 
 .pagination {
@@ -916,6 +949,13 @@ var {
 .pagination__link_current:focus, .pagination__link_current:hover {
   color: #fff;
   text-decoration: none;
+}
+
+.table__caption {
+  padding-bottom: 0.3rem;
+  padding-top: 0.9rem;
+  margin: 0;
+  text-align: center;
 }
 
 .well {

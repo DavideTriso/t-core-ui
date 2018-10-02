@@ -1,0 +1,5 @@
+.table__td_right-tablet {
+    @include mqMin($tableTabletWidth) {
+        text-align: right;
+    }  
+}

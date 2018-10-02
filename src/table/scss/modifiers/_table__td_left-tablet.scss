@@ -1,0 +1,5 @@
+.table__td_left-tablet {
+    @include mqMin($tableTabletWidth) {
+        text-align: left;
+    }
+}

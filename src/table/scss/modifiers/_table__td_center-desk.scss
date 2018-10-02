@@ -1,0 +1,5 @@
+.table__td_center-desk {
+    @include mqMin($tableDeskWidth) {
+        text-align: center;
+    }
+}

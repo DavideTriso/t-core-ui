@@ -1,0 +1,5 @@
+.table__td_right-desk {
+    @include mqMin($tableDeskWidth) {
+        text-align: right;
+    }  
+}

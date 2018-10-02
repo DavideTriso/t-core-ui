@@ -1,0 +1,5 @@
+.table__caption {
+    @include padding($table__caption--padding);
+    @include margin($table__caption--margin);
+    @include text($table__caption--text);
+} 
