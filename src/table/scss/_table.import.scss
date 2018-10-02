@@ -2,3 +2,20 @@
 @import "table.variables.scss";
 @import "table";
 @import "table__elements";
+
+@import "modifiers/table__td_th";   
+
+@import "modifiers/table__td_center";
+@import "modifiers/table__td_left";
+@import "modifiers/table__td_right";
+
+@import "modifiers/table__td_center-tablet";
+@import "modifiers/table__td_left-tablet";
+@import "modifiers/table__td_right-tablet";
+
+@import "modifiers/table__td_center-desk";
+@import "modifiers/table__td_left-desk";
+@import "modifiers/table__td_right-desk";  
+
+@import "modifiers/table_alternaterows"; 
+@import "modifiers/table_list";

@@ -1,0 +1,6 @@
+.table {
+    position: relative;
+    max-width: 100%;
+    overflow: auto;
+    @include padding($table--padding);
+}

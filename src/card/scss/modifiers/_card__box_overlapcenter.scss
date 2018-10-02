@@ -1,0 +1,9 @@
+.card__box_overlapcenter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    @include background($card__box_overlapcenter--background);
+    @include border($card__box_overlapcenter--border);
+}

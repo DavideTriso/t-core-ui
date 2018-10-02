@@ -1,0 +1,24 @@
+@include mqMax(w2) {
+    .table_list {
+        .table__thead {
+            visibility: hidden;
+            position: absolute;
+            left: -10000%;
+        }
+        .table__tr {
+            @include border($table__tr_list--border);
+            display: block;
+        }
+        .table__td {
+            display: inline-block;
+            min-width: 100%;
+            &:before {
+                content: attr(data-td-label);
+                @include text($table__td_listPbefore--text);
+                @include font($table__td_listPbefore--font);
+                @include typography($table__td_listPbefore--typography);
+                @include padding($table__td_listPbefore--padding);
+            }
+        }
+    }
+}

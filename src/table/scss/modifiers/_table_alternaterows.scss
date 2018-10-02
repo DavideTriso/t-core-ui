@@ -1,0 +1,15 @@
+
+.table_alternaterows {
+    .table__tbody {
+        .table__tr {
+            &:nth-child(odd) {
+                @include background($table__tr_alternaterowsPodd--background);
+                @include text($table__tr_alternaterowsPodd--text);
+            }
+            &:nth-child(even) {
+                @include background($table__tr_alternaterowsPeven--background);
+                @include text($table__tr_alternaterowsPeven--text);
+            }
+        }
+    }
+}

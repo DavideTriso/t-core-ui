@@ -1,0 +1,7 @@
+
+.table__td_th {
+    @include padding($table__td_th--padding);
+    @include text($table__td_th--text);
+    @include font($table__td_th--font);
+    @include font($table__td_th--typography);
+}

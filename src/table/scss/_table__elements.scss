@@ -1,5 +1,28 @@
 .table__caption {
     @include padding($table__caption--padding);
     @include margin($table__caption--margin);
-    @include text($table__caption--text);
+    @include text($table__caption--text); 
+    @include font($table__caption--font); 
 } 
+ 
+.table__thead {
+    @include border($table__thead--border);
+    @include background($table__thead--background);
+}
+
+.table__tfoot {
+    @include border($table__tfoot--border);
+    @include background($table__tfoot--background);
+}
+
+.table__tbody {
+    @include border($table__tbody--border);
+    @include background($table__tbody--background);
+}
+
+.table__td {
+    @include padding($table__td--padding);
+    @include text($table__td--text);
+    @include font($table__td--font);
+    @include font($table__td--typography);
+}
