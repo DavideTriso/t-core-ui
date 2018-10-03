@@ -763,12 +763,13 @@ var {
 .img {
   display: block;
   max-width: 100%;
-  width: 100%;
+  width: auto;
   height: auto;
 }
 
 .img_resp {
   max-width: none;
+  width: 100%;
 }
 
 .link {

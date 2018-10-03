@@ -18,7 +18,6 @@ gulp.task('scssDist', function (done) {
     .pipe(cssnano())
     .pipe(gulp.dest('dist'))
     .pipe(notify({ message: 'scssDist task complete' }));
-  done();
 });
 
 //Save a copy of compiled CSS in 'docs' folder
@@ -28,7 +27,6 @@ gulp.task('scssDocs', function (done) {
     .pipe(gulp.dest('docs'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(notify({ message: 'scssDocs task complete' }));
-  done();
 });
 
 //Task alias
