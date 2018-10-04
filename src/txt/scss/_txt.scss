@@ -1,15 +1,28 @@
 #{$txtClassName} {
-  @include font((fontSize: $txtFontSize));
+    @include font((fontSize: $txtFontSize));
+    @include typography((lineHeight: $txtLineHeight);
 
-  @if $tabletMinWidth != '' {
-    @include mqMin($tabletMinWidth) {
-      @include font((fontSize: $tablet--txtFontSize));
-    }
-  }
+    @include typography((lineHeight: $txtLineHeight)) @if $tabletMinWidth != '' {
+        @include mqMin($tabletMinWidth) {
+            @if $tablet--txtFontSize != '' {
+                @include font((fontSize: $tablet--txtFontSize));
+            }
 
-  @if $desktopMinWidth != '' {
-    @include mqMin($desktopMinWidth) {
-      @include font((fontSize: $desktop--txtFontSize));
+            @if $tablet--txtLineHeight != '' {
+                @include typography((lineHeight: $tablet--txtLineHeight))
+            }
+        }
     }
-  }
+
+    @if $desktopMinWidth != '' {
+        @include mqMin($desktopMinWidth) {
+            @if $desktop--txtFontSize != '' {
+                @include font((fontSize: $desktop--txtFontSize));
+            }
+
+            @if $desktop--txtLineHeight != '' {
+                @include typography((lineHeight: $desktop--txtLineHeight))
+            }
+        }
+    }
 }
