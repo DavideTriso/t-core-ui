@@ -8,8 +8,11 @@ $desktopMinWidth: 1200px !default;
 //the entire content will scale accordingly
 //To override this scaling behaviour for one element, use rem instead of em for it;s font-size
 $txtFontSize: 1rem;
+$txtLineHeight: 1.2;
 $tablet--txtFontSize: 1.05rem;
+$tablet--txtLineHeight: 1.2;
 $desktop--txtFontSize: 1.1rem;
+$desktop--txtLineHeight: 1.2;
 
 //HEADINGS
 //the fallback values are used when no specific value for the element is defined
