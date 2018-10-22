@@ -1,15 +1,19 @@
 #{$txtClassName} {
-  @include font((fontSize: $txtFontSize));
-
-  @if $tabletMinWidth != '' {
-    @include mqMin($tabletMinWidth) {
-      @include font((fontSize: $tablet--txtFontSize));
+    //reset the margin of the first child of .txt
+    //to start at the top of .txt 
+    //and keep all text aligned also when using .txt_twocol or .txt_threecol
+    >*:first-child {
+        margin-top: 0;
     }
-  }
-
-  @if $desktopMinWidth != '' {
-    @include mqMin($desktopMinWidth) {
-      @include font((fontSize: $desktop--txtFontSize));
+    @include font((fontSize: $txtFontSize));
+    @if $tabletMinWidth !='' {
+        @include mqMin($tabletMinWidth) {
+            @include font((fontSize: $tablet--txtFontSize));
+        }
     }
-  }
+    @if $desktopMinWidth !='' {
+        @include mqMin($desktopMinWidth) {
+            @include font((fontSize: $desktop--txtFontSize));
+        }
+    }
 }

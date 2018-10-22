@@ -11,22 +11,14 @@ var gulp = require('gulp'),
 //SCSS -> CSS
 //Compile SCSS and save compiled + minified CSS file to 'dist' folder
 gulp.task('scssDist', function (done) {
-  return sass('src/scss/*.scss', { style: 'expanded' })
-    .pipe(autoprefixer('last 5 version'))
-    .pipe(gulp.dest('dist'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(cssnano())
-    .pipe(gulp.dest('dist'))
-    .pipe(notify({ message: 'scssDist task complete' }));
+  sass('src/**/*.scss', { style: 'expanded' }).pipe(autoprefixer('last 5 version')).pipe(gulp.dest('dist')).pipe(rename({ suffix: '.min' })).pipe(cssnano()).pipe(gulp.dest('dist')).pipe(notify({ message: 'scssDist task complete' }));
+  done();
 });
 
 //Save a copy of compiled CSS in 'docs' folder
 gulp.task('scssDocs', function (done) {
-  return sass('src/*.scss', { style: 'expanded' })
-    .pipe(autoprefixer('last 5 version'))
-    .pipe(gulp.dest('docs'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(notify({ message: 'scssDocs task complete' }));
+  sass('src/**/*.scss', { style: 'expanded' }).pipe(autoprefixer('last 5 version')).pipe(gulp.dest('docs')).pipe(rename({ suffix: '.min' })).pipe(notify({ message: 'scssDocs task complete' }));
+  done();
 });
 
 //Task alias

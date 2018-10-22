@@ -1,0 +1,121 @@
+.link_current {
+    @include font($link_current--font);
+    @include text($link_current--text);
+    @include typography($link_current--typography);
+    @include background($link_current--background);
+    &:active,
+    &:focus,
+    &:hover {
+        @include font($link_currentPhover--font);
+        @include text($link_currentPhover--text);
+        @include typography($link_currentPhover--typography);
+        @include background($link_currentPhover--background);
+    }
+    &:visited {
+        @include font($link_currentPvisited--font);
+        @include text($link_currentPvisited--text);
+        @include typography($link_currentPvisited--typography);
+        @include background($link_currentPvisited--background);
+        &:active,
+        &:focus,
+        &:hover {
+            @include font($link_currentPvisitedPhover--font);
+            @include text($link_currentPvisitedPhover--text);
+            @include typography($link_currentPvisitedPhover--typography);
+            @include background($link_currentPvisitedPhover--background);
+        }
+    }
+}
+
+.link_primary {
+    &.link_current {
+        @include font($link_primary_current--font);
+        @include text($link_primary_current--text);
+        @include typography($link_primary_current--typography);
+        @include background($link_primary_current--background);
+        &:active,
+        &:focus,
+        &:hover {
+            @include font($link_primary_currentPhover--font);
+            @include text($link_primary_currentPhover--text);
+            @include typography($link_primary_currentPhover--typography);
+            @include background($link_primary_currentPhover--background);
+        }
+        &:visited {
+            @include font($link_primary_currentPvisited--font);
+            @include text($link_primary_currentPvisited--text);
+            @include typography($link_primary_currentPvisited--typography);
+            @include background($link_primary_currentPvisited--background);
+            &:active,
+            &:focus,
+            &:hover {
+                @include font($link_primary_currentPvisitedPhover--font);
+                @include text($link_primary_currentPvisitedPhover--text);
+                @include typography($link_primary_currentPvisitedPhover--typography);
+                @include background($link_primary_currentPvisitedPhover--background);
+            }
+        }
+    }
+}
+
+.link_secondary {
+    &.link_current {
+        @include font($link_secondary_current--font);
+        @include text($link_secondary_current--text);
+        @include typography($link_secondary_current--typography);
+        @include background($link_secondary_current--background);
+        &:active,
+        &:focus,
+        &:hover {
+            @include font($link_secondary_currentPhover--font);
+            @include text($link_secondary_currentPhover--text);
+            @include typography($link_secondary_currentPhover--typography);
+            @include background($link_secondary_currentPhover--background);
+        }
+        &:visited {
+            @include font($link_secondary_currentPvisited--font);
+            @include text($link_secondary_currentPvisited--text);
+            @include typography($link_secondary_currentPvisited--typography);
+            @include background($link_secondary_currentPvisited--background);
+            &:active,
+            &:focus,
+            &:hover {
+                @include font($link_secondary_currentPvisitedPhover--font);
+                @include text($link_secondary_currentPvisitedPhover--text);
+                @include typography($link_secondary_currentPvisitedPhover--typography);
+                @include background($link_secondary_currentPvisitedPhover--background);
+            }
+        }
+    }
+}
+
+.link_tertiary {
+    &.link_current {
+        @include font($link_tertiary_current--font);
+        @include text($link_tertiary_current--text);
+        @include typography($link_tertiary_current--typography);
+        @include background($link_tertiary_current--background);
+        &:active,
+        &:focus,
+        &:hover {
+            @include font($link_tertiary_currentPhover--font);
+            @include text($link_tertiary_currentPhover--text);
+            @include typography($link_tertiary_currentPhover--typography);
+            @include background($link_tertiary_currentPhover--background);
+        }
+        &:visited {
+            @include font($link_tertiary_currentPvisited--font);
+            @include text($link_tertiary_currentPvisited--text);
+            @include typography($link_tertiary_currentPvisited--typography);
+            @include background($link_tertiary_currentPvisited--background);
+            &:active,
+            &:focus,
+            &:hover {
+                @include font($link_tertiary_currentPvisitedPhover--font);
+                @include text($link_tertiary_currentPvisitedPhover--text);
+                @include typography($link_tertiary_currentPvisitedPhover--typography);
+                @include background($link_tertiary_currentPvisitedPhover--background);
+            }
+        }
+    }
+}

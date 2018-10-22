@@ -1,184 +1,59 @@
-$heading--font: (
-  fontFamily: "Helvetica, sans-serif",
-  fontSize  : map-get($headingDefault, w1)
-)
-!default;
-$heading--text: ()
-!default;
-
-$heading--typography: ()
-!default;
-
-$heading--padding: (
-  top   : 0.9rem,
-  bottom: 0.3rem
-)
-!default;
-
+$heading--font: ( fontFamily: "Helvetica, sans-serif", fontSize: map-get($headingDefault, w1)) !default;
+$heading--text: () !default;
+$heading--typography: () !default;
+$heading--padding: ( top: 0.9rem, bottom: 0.3rem) !default;
 //primary
-$heading_primary--font: (
-  fontFamily: "Impact, Charcoal, sans-serif"
-)
-!default;
-$heading_primary--text: ()
-!default;
-$heading_primary--typography: ()
-!default;
-$heading_primary--padding: ()
-!default;
-
+$heading_primary--font: ( fontFamily: "Impact, Charcoal, sans-serif") !default;
+$heading_primary--text: () !default;
+$heading_primary--typography: () !default;
+$heading_primary--padding: () !default;
 //secondary
-$heading_secondary--font: (
-  fontFamily: "'Georgia', serif"
-)
-!default;
-$heading_secondary--text: ()
-!default;
-$heading_secondary--typography: ()
-!default;
-$heading_secondary--padding: ()
-!default;
-
+$heading_secondary--font: ( fontFamily: "'Georgia', serif") !default;
+$heading_secondary--text: () !default;
+$heading_secondary--typography: () !default;
+$heading_secondary--padding: () !default;
 //tertiary
-$heading_tertiary--font: (
-  fontFamily: "'Courier New', Courier, monospace"
-)
-!default;
-$heading_tertiary--text: ()
-!default;
-$heading_tertiary--typography: ()
-!default;
-$heading_tertiary--padding: ()
-!default;
-
+$heading_tertiary--font: ( fontFamily: "'Courier New', Courier, monospace") !default;
+$heading_tertiary--text: () !default;
+$heading_tertiary--typography: () !default;
+$heading_tertiary--padding: () !default;
 //heading xs
-$heading_xs--font: (
-  fontSize: map-get($headingXs, w1)
-)
-!default;
-
+$heading_xs--font: ( fontSize: map-get($headingXs, w1)) !default;
 //heading sm
-$heading_sm--font: (
-  fontSize: map-get($headingSm, w1)
-)
-!default;
-
+$heading_sm--font: ( fontSize: map-get($headingSm, w1)) !default;
 //heading lg
-$heading_lg--font: (
-  fontSize: map-get($headingLg, w1)
-)
-!default;
-
+$heading_lg--font: ( fontSize: map-get($headingLg, w1)) !default;
 //heading xl
-$heading_xl--font: (
-  fontSize: map-get($headingXl, w1)
-)
-!default;
-
+$heading_xl--font: ( fontSize: map-get($headingXl, w1)) !default;
 //heading responsive
-$w2-heading_responsive--font: (
-  fontSize: (map-get($headingDefault, w1) + map-get($headingDefault, w4)) / 2
-)
-!default;
-$w4-heading_responsive--font: (
-  fontSize: map-get($headingDefault, w4)
-)
-!default;
-
-$w2-heading_xs_responsive--font: (
-  fontSize: (map-get($headingXs, w1) + map-get($headingXs, w4)) / 2
-)
-!default;
-$w4-heading_xs_responsive--font: (
-  fontSize: map-get($headingXs, w4)
-)
-!default;
-
-$w2-heading_sm_responsive--font: (
-  fontSize: (map-get($headingSm, w1) + map-get($headingSm, w4)) / 2
-)
-!default;
-$w4-heading_sm_responsive--font: (
-  fontSize: map-get($headingSm, w4)
-)
-!default;
-
-$w2-heading_lg_responsive--font: (
-  fontSize: (map-get($headingLg, w1) + map-get($headingLg, w4)) / 2
-)
-!default;
-$w4-heading_lg_responsive--font: (
-  fontSize: map-get($headingLg, w4)
-)
-!default;
-
-$w2-heading_xl_responsive--font: (
-  fontSize: (map-get($headingXl, w1) + map-get($headingXl, w4)) / 2
-)
-!default;
-$w4-heading_xl_responsive--font: (
-  fontSize: map-get($headingXl, w4)
-)
-!default;
-
+$w2-heading_responsive--font: ( fontSize: (map-get($headingDefault, w1) + map-get($headingDefault, w4)) / 2) !default;
+$w4-heading_responsive--font: ( fontSize: map-get($headingDefault, w4)) !default;
+$w2-heading_xs_responsive--font: ( fontSize: (map-get($headingXs, w1) + map-get($headingXs, w4)) / 2) !default;
+$w4-heading_xs_responsive--font: ( fontSize: map-get($headingXs, w4)) !default;
+$w2-heading_sm_responsive--font: ( fontSize: (map-get($headingSm, w1) + map-get($headingSm, w4)) / 2) !default;
+$w4-heading_sm_responsive--font: ( fontSize: map-get($headingSm, w4)) !default;
+$w2-heading_lg_responsive--font: ( fontSize: (map-get($headingLg, w1) + map-get($headingLg, w4)) / 2) !default;
+$w4-heading_lg_responsive--font: ( fontSize: map-get($headingLg, w4)) !default;
+$w2-heading_xl_responsive--font: ( fontSize: (map-get($headingXl, w1) + map-get($headingXl, w4)) / 2) !default;
+$w4-heading_xl_responsive--font: ( fontSize: map-get($headingXl, w4)) !default;
 //heading fluidsize
-$w2-heading_fluidsize--font: (
-  fontSize: linearInterpolation($headingDefault, rem)
-)
-!default;
-$w4-heading_fluidsize--font: (
-  fontSize: map-get($headingDefault, w4)
-)
-!default;
-
-$w2-heading_xs_fluidsize--font: (
-  fontSize: linearInterpolation($headingXs, rem)
-)
-!default;
-$w4-heading_xs_fluidsize--font: (
-  fontSize: map-get($headingXs, w4)
-)
-!default;
-
-$w2-heading_sm_fluidsize--font: (
-  fontSize: linearInterpolation($headingSm, rem)
-)
-!default;
-$w4-heading_sm_fluidsize--font: (
-  fontSize: map-get($headingSm, w4)
-)
-!default;
-
-$w2-heading_lg_fluidsize--font: (
-  fontSize: linearInterpolation($headingLg, rem)
-)
-!default;
-$w4-heading_lg_fluidsize--font: (
-  fontSize: map-get($headingLg, w4)
-)
-!default;
-
-$w2-heading_xl_fluidsize--font: (
-  fontSize: linearInterpolation($headingXl, rem)
-)
-!default;
-$w4-heading_xl_fluidsize--font: (
-  fontSize: map-get($headingXl, w4)
-)
-!default;
-
+$w2-heading_fluidsize--font: ( fontSize: linearInterpolation($headingDefault, rem)) !default;
+$w4-heading_fluidsize--font: ( fontSize: map-get($headingDefault, w4)) !default;
+$w2-heading_xs_fluidsize--font: ( fontSize: linearInterpolation($headingXs, rem)) !default;
+$w4-heading_xs_fluidsize--font: ( fontSize: map-get($headingXs, w4)) !default;
+$w2-heading_sm_fluidsize--font: ( fontSize: linearInterpolation($headingSm, rem)) !default;
+$w4-heading_sm_fluidsize--font: ( fontSize: map-get($headingSm, w4)) !default;
+$w2-heading_lg_fluidsize--font: ( fontSize: linearInterpolation($headingLg, rem)) !default;
+$w4-heading_lg_fluidsize--font: ( fontSize: map-get($headingLg, w4)) !default;
+$w2-heading_xl_fluidsize--font: ( fontSize: linearInterpolation($headingXl, rem)) !default;
+$w4-heading_xl_fluidsize--font: ( fontSize: map-get($headingXl, w4)) !default;
 //Subheading
-
-$heading__sub--font: (
-  fontSize : 70%,
-  fontStyle: italic
-)
-!default;
-$heading__sub--text: ()
-!default;
-$heading__sub--typography: ()
-!default;
-$heading__sub--padding: (
-  top: 0.1rem
-)
-!default;
+$heading__sub--font: ( fontSize: 70%, fontStyle: italic) !default;
+$heading__sub--text: () !default;
+$heading__sub--typography: () !default;
+$heading__sub--padding: ( top: 0.1rem) !default;
+//Pre-heading
+$heading__pre--font: ( fontSize: 70%, fontStyle: italic) !default;
+$heading__pre--text: () !default;
+$heading__pre--typography: () !default;
+$heading__pre--padding: ( bottom: 0.1rem) !default;

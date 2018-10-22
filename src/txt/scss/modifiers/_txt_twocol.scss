@@ -1,0 +1,10 @@
+.txt_twocol {
+    @if $colsTabletMinWidth !='' {
+        @include mqMin(w2) {
+            column-width: 12rem;
+            column-count: 2;
+            column-gap: 2rem;
+            column-fill: balance;
+        }
+    }
+}

@@ -1,7 +1,15 @@
 .heading__sub {
-  display: block;
-  @include font($heading__sub--font);
-  @include text($heading__sub--text);
-  @include typography($heading__sub--typography);
-  @include padding($heading__sub--padding);
+    display: block;
+    @include font($heading__sub--font);
+    @include text($heading__sub--text);
+    @include typography($heading__sub--typography);
+    @include padding($heading__sub--padding);
+}
+
+.heading__pre {
+    display: block;
+    @include font($heading__pre--font);
+    @include text($heading__pre--text);
+    @include typography($heading__pre--typography);
+    @include padding($heading__pre--padding);
 }

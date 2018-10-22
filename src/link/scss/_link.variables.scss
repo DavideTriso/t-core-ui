@@ -1,205 +1,160 @@
-$link--font: ()
-!default;
-$link--text: (
-  color         : $linkColor,
-  textDecoration: underline
-)
-!default;
-$link--typography: ()
-!default;
-$link--background: ()
-!default;
-$link--padding: (
-  leftRight: 0.1rem,
-  topBottom: 0
-)
-!default;
-$linkPfocus--outline: (
-  outline      : 0.1rem solid #7bb2f4,
-  outlineOffset: 0.05rem
-)
-!default;
+$link--font: () !default;
+$link--text: ( color: $linkColor, textDecoration: underline) !default;
+$link--typography: () !default;
+$link--background: () !default;
+$link--padding: ( leftRight: 0.1rem, topBottom: 0) !default;
+$linkPfocus--outline: ( outline: 0.1rem solid #7bb2f4, outlineOffset: 0.05rem) !default;
 $link--transition: 0.2s all ease-in !default;
-
 //hover, focus, active
-$linkPhover--font: ()
-!default;
-$linkPhover--text: (
-  color         : darken($linkColor, 15%),
-  textDecoration: none
-)
-!default;
-$linkPhover--typography: ()
-!default;
-$linkPhover--background: ()
-!default;
-
+$linkPhover--font: () !default;
+$linkPhover--text: ( color: darken($linkColor, 15%), textDecoration: none) !default;
+$linkPhover--typography: () !default;
+$linkPhover--background: () !default;
 //visited
-$linkPvisited--font: ()
-!default;
-$linkPvisited--text: ()
-!default;
-$linkPvisited--typography: ()
-!default;
-$linkPvisited--background: ()
-!default;
-
+$linkPvisited--font: () !default;
+$linkPvisited--text: () !default;
+$linkPvisited--typography: () !default;
+$linkPvisited--background: () !default;
 //visited + hover, focus, active
-$linkPvisitedPhover--font: ()
-!default;
-$linkPvisitedPhover--text: ()
-!default;
-$linkPvisitedPhover--typography: ()
-!default;
-$linkPvisitedPhover--background: ()
-!default;
-
+$linkPvisitedPhover--font: () !default;
+$linkPvisitedPhover--text: () !default;
+$linkPvisitedPhover--typography: () !default;
+$linkPvisitedPhover--background: () !default;
 //ELEMENTS
 //icon
-$link__icon--padding: (
-  leftRight: 0.1rem,
-  topBottom: 0
-)
-!default;
-
+$link__icon--padding: ( leftRight: 0.1rem, topBottom: 0) !default;
 //MODIFIERS
+//current
+$link_current--font: () !default;
+$link_current--text: () !default;
+$link_current--typography: () !default;
+$link_current--background: () !default;
+$link_currentPhover--font: () !default;
+$link_currentPhover--text: () !default;
+$link_currentPhover--typography: () !default;
+$link_currentPhover--background: () !default;
+$link_currentPvisited--font: () !default;
+$link_currentPvisited--text: () !default;
+$link_currentPvisited--typography: () !default;
+$link_currentPvisited--background: () !default;
+$link_currentPvisitedPhover--font: () !default;
+$link_currentPvisitedPhover--text: () !default;
+$link_currentPvisitedPhover--typography: () !default;
+$link_currentPvisitedPhover--background: () !default;
 //primary
-$link_primary--font: ()
-!default;
-$link_primary--text: (
-  color: $linkPrimaryColor
-)
-!default;
-$link_primary--typography: ()
-!default;
-$link_primary--background: ()
-!default;
-$link_primary--padding: ()
-!default;
+$link_primary--font: () !default;
+$link_primary--text: ( color: $linkPrimaryColor) !default;
+$link_primary--typography: () !default;
+$link_primary--background: () !default;
+$link_primary--padding: () !default;
 $link_primary--transition: "" !default;
-
 //hover, focus, active
-$link_primaryPhover--font: ()
-!default;
-$link_primaryPhover--text: (
-  color: darken($linkPrimaryColor, 15%)
-)
-!default;
-$link_primaryPhover--typography: ()
-!default;
-$link_primaryPhover--background: ()
-!default;
-
+$link_primaryPhover--font: () !default;
+$link_primaryPhover--text: ( color: darken($linkPrimaryColor, 15%)) !default;
+$link_primaryPhover--typography: () !default;
+$link_primaryPhover--background: () !default;
 //visited
-$link_primaryPvisited--font: ()
-!default;
-$link_primaryPvisited--text: ()
-!default;
-$link_primaryPvisited--typography: ()
-!default;
-$link_primaryPvisited--background: ()
-!default;
-
+$link_primaryPvisited--font: () !default;
+$link_primaryPvisited--text: () !default;
+$link_primaryPvisited--typography: () !default;
+$link_primaryPvisited--background: () !default;
 //visited + hover, focus, active
-$link_primaryPvisitedPhover--font: ()
-!default;
-$link_primaryPvisitedPhover--text: ()
-!default;
-$link_primaryPvisitedPhover--typography: ()
-!default;
-$link_primaryPvisitedPhover--background: ()
-!default;
-
+$link_primaryPvisitedPhover--font: () !default;
+$link_primaryPvisitedPhover--text: () !default;
+$link_primaryPvisitedPhover--typography: () !default;
+$link_primaryPvisitedPhover--background: () !default;
+//current
+$link_primary_current--font: () !default;
+$link_primary_current--text: () !default;
+$link_primary_current--typography: () !default;
+$link_primary_current--background: () !default;
+$link_primary_currentPhover--font: () !default;
+$link_primary_currentPhover--text: () !default;
+$link_primary_currentPhover--typography: () !default;
+$link_primary_currentPhover--background: () !default;
+$link_primary_currentPvisited--font: () !default;
+$link_primary_currentPvisited--text: () !default;
+$link_primary_currentPvisited--typography: () !default;
+$link_primary_currentPvisited--background: () !default;
+$link_primary_currentPvisitedPhover--font: () !default;
+$link_primary_currentPvisitedPhover--text: () !default;
+$link_primary_currentPvisitedPhover--typography: () !default;
+$link_primary_currentPvisitedPhover--background: () !default;
 //secondary
-$link_secondary--font: ()
-!default;
-$link_secondary--text: (
-  color: $linkSecondaryColor
-)
-!default;
-$link_secondary--typography: ()
-!default;
-$link_secondary--background: ()
-!default;
-$link_secondary--padding: ()
-!default;
+$link_secondary--font: () !default;
+$link_secondary--text: ( color: $linkSecondaryColor) !default;
+$link_secondary--typography: () !default;
+$link_secondary--background: () !default;
+$link_secondary--padding: () !default;
 $link_secondary--transition: "" !default;
-
 //hover, focus, active
-$link_secondaryPhover--font: ()
-!default;
-$link_secondaryPhover--text: (
-  color: darken($linkSecondaryColor, 15%)
-)
-!default;
-$link_secondaryPhover--typography: ()
-!default;
-$link_secondaryPhover--background: ()
-!default;
-
+$link_secondaryPhover--font: () !default;
+$link_secondaryPhover--text: ( color: darken($linkSecondaryColor, 15%)) !default;
+$link_secondaryPhover--typography: () !default;
+$link_secondaryPhover--background: () !default;
 //visited
-$link_secondaryPvisited--font: ()
-!default;
-$link_secondaryPvisited--text: ()
-!default;
-$link_secondaryPvisited--typography: ()
-!default;
-$link_secondaryPvisited--background: ()
-!default;
-
+$link_secondaryPvisited--font: () !default;
+$link_secondaryPvisited--text: () !default;
+$link_secondaryPvisited--typography: () !default;
+$link_secondaryPvisited--background: () !default;
 //visited + hover, focus, active
-$link_secondaryPvisitedPhover--font: ()
-!default;
-$link_secondaryPvisitedPhover--text: ()
-!default;
-$link_secondaryPvisitedPhover--typography: ()
-!default;
-$link_secondaryPvisitedPhover--background: ()
-!default;
-
+$link_secondaryPvisitedPhover--font: () !default;
+$link_secondaryPvisitedPhover--text: () !default;
+$link_secondaryPvisitedPhover--typography: () !default;
+$link_secondaryPvisitedPhover--background: () !default;
+//current
+$link_secondary_current--font: () !default;
+$link_secondary_current--text: () !default;
+$link_secondary_current--typography: () !default;
+$link_secondary_current--background: () !default;
+$link_secondary_currentPhover--font: () !default;
+$link_secondary_currentPhover--text: () !default;
+$link_secondary_currentPhover--typography: () !default;
+$link_secondary_currentPhover--background: () !default;
+$link_secondary_currentPvisited--font: () !default;
+$link_secondary_currentPvisited--text: () !default;
+$link_secondary_currentPvisited--typography: () !default;
+$link_secondary_currentPvisited--background: () !default;
+$link_secondary_currentPvisitedPhover--font: () !default;
+$link_secondary_currentPvisitedPhover--text: () !default;
+$link_secondary_currentPvisitedPhover--typography: () !default;
+$link_secondary_currentPvisitedPhover--background: () !default;
 //tertiary
-$link_tertiary--font: ()
-!default;
-$link_tertiary--text: (
-  color: $linkTertiaryColor
-)
-!default;
-$link_tertiary--typography: ()
-!default;
-$link_tertiary--background: ()
-!default;
-$link_tertiary--padding: ()
-!default;
+$link_tertiary--font: () !default;
+$link_tertiary--text: ( color: $linkTertiaryColor) !default;
+$link_tertiary--typography: () !default;
+$link_tertiary--background: () !default;
+$link_tertiary--padding: () !default;
 $link_tertiary--transition: "" !default;
-
 //hover, focus, active
-$link_tertiaryPhover--font: ()
-!default;
-$link_tertiaryPhover--text: (
-  color: darken($linkTertiaryColor, 15%)
-)
-!default;
-$link_tertiaryPhover--typography: ()
-!default;
-$link_tertiaryPhover--background: ()
-!default;
-
+$link_tertiaryPhover--font: () !default;
+$link_tertiaryPhover--text: ( color: darken($linkTertiaryColor, 15%)) !default;
+$link_tertiaryPhover--typography: () !default;
+$link_tertiaryPhover--background: () !default;
 //visited
-$link_tertiaryPvisited--font: ()
-!default;
-$link_tertiaryPvisited--text: ()
-!default;
-$link_tertiaryPvisited--typography: ()
-!default;
-$link_tertiaryPvisited--background: ()
-!default;
-
+$link_tertiaryPvisited--font: () !default;
+$link_tertiaryPvisited--text: () !default;
+$link_tertiaryPvisited--typography: () !default;
+$link_tertiaryPvisited--background: () !default;
 //visited + hover, focus, active
-$link_tertiaryPvisitedPhover--font: ()
-!default;
-$link_tertiaryPvisitedPhover--text: ()
-!default;
-$link_tertiaryPvisitedPhover--typography: ()
-!default;
-$link_tertiaryPvisitedPhover--background: ()
-!default;
+$link_tertiaryPvisitedPhover--font: () !default;
+$link_tertiaryPvisitedPhover--text: () !default;
+$link_tertiaryPvisitedPhover--typography: () !default;
+$link_tertiaryPvisitedPhover--background: () !default;
+//current
+$link_tertiary_current--font: () !default;
+$link_tertiary_current--text: () !default;
+$link_tertiary_current--typography: () !default;
+$link_tertiary_current--background: () !default;
+$link_tertiary_currentPhover--font: () !default;
+$link_tertiary_currentPhover--text: () !default;
+$link_tertiary_currentPhover--typography: () !default;
+$link_tertiary_currentPhover--background: () !default;
+$link_tertiary_currentPvisited--font: () !default;
+$link_tertiary_currentPvisited--text: () !default;
+$link_tertiary_currentPvisited--typography: () !default;
+$link_tertiary_currentPvisited--background: () !default;
+$link_tertiary_currentPvisitedPhover--font: () !default;
+$link_tertiary_currentPvisitedPhover--text: () !default;
+$link_tertiary_currentPvisitedPhover--typography: () !default;
+$link_tertiary_currentPvisitedPhover--background: () !default;

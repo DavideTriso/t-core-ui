@@ -35,7 +35,6 @@
 
 body,
 html {
-  color: #000;
   margin: 0;
   max-width: 100%;
   min-width: 100%;
@@ -169,19 +168,12 @@ textarea {
 
 figure,
 img,
-map,
 picture {
   display: block;
   margin: 0;
   padding: 0;
   height: auto;
-  max-width: 100%;
-  width: 100%;
-}
-
-canvas {
-  height: auto;
-  width: 100%;
+  width: auto;
 }
 
 figcaption {
@@ -241,11 +233,9 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   font-size: 1rem;
   font-weight: normal;
-  text-align: left;
   margin: 0;
   padding: 0;
 }
@@ -628,6 +618,13 @@ var {
   font-size: 70%;
   font-style: italic;
   padding-top: 0.1rem;
+}
+
+.heading__pre {
+  display: block;
+  font-size: 70%;
+  font-style: italic;
+  padding-bottom: 0.1rem;
 }
 
 .heading_primary {
