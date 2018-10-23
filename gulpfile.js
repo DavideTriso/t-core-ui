@@ -3,9 +3,7 @@ var gulp = require('gulp'),
   sass = require('gulp-ruby-sass'),
   autoprefixer = require('gulp-autoprefixer'),
   cssnano = require('gulp-cssnano'),
-  uglify = require('gulp-uglify'),
   rename = require('gulp-rename'),
-  concat = require('gulp-concat'),
   notify = require('gulp-notify');
 
 //SCSS -> CSS
@@ -22,7 +20,10 @@ gulp.task('scssDocs', function (done) {
 });
 
 //Task alias
-gulp.task('scss', gulp.parallel('scssDist', 'scssDocs'));
+gulp.task('scss', function (done) {
+  gulp.parallel('scssDist', 'scssDocs');
+  done();
+});
 
 //WATCH TASKS
 

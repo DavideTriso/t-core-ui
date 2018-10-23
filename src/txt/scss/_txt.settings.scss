@@ -2,9 +2,6 @@ $txtClassName: ".txt";
 //the breakpoints
 $tabletMinWidth: 767px !default;
 $desktopMinWidth: 1200px !default;
-//breakpoints for columns layout
-$colsTabletMinWidth: 767px !default;
-$colsDesktopMinWidth: 1200px !default;
 //different font sizes can be defined for the running text wrapper element.
 //because the font size of all the wrapper's children are defined in em,
 //the entire content will scale accordingly
@@ -159,6 +156,7 @@ $aPhover--border: () !default;
 $aPhover--background: () !default;
 $aPfocus--outline: () !default;
 //LISTS
+$ul--list: () !default;
 $ul--margin: () !default;
 $ul--padding: () !default;
 $ol--list: () !default;
@@ -169,3 +167,11 @@ $li--text: () !default;
 $li--typography: () !default;
 $li--margin: () !default;
 $li--padding: () !default;
+//COLUMNS LAYOUT
+//breakpoints for columns layout
+$colsTabletMinWidth: 767px !default;
+$colsDesktopMinWidth: 1200px !default;
+$txt_twocol--width: 10rem !default;
+$txt_twocol--gap: 2rem !default;
+$txt_threecol--width: 8rem !default;
+$txt_threecol--gap: 2rem !default;

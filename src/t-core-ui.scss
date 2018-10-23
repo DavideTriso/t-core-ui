@@ -3,15 +3,15 @@
 @import "../node_modules/t-css-framework/src/functions/functions.import";
 @import "../node_modules/t-css-framework/src/helpers/helpers.import";
 @import "../node_modules/t-css-framework/src/reset/reset.import";
-
 //ui components
 @import "breadcrumb/scss/breadcrumb.import";
 @import "btn/scss/btn.import";
 @import "card/scss/card.import";
 @import "heading/scss/heading.import";
 @import "img/scss/img.import";
-@import "link/scss/link.import"; 
+@import "link/scss/link.import";
 @import "list/scss/list.import";
 @import "pagination/scss/pagination.import";
 @import "table/scss/table.import";
+@import "txt/scss/txt.import";
 @import "well/scss/well.import";

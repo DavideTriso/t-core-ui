@@ -1,9 +1,9 @@
 .txt_threecol {
     @if $colsTabletMinWidth !='' {
         @include mqMin(w2) {
-            column-width: 12rem;
+            column-width: $txt_threecol--width;
             column-count: 2;
-            column-gap: 1rem;
+            column-gap: $txt_threecol--gap;
             column-fill: balance;
         }
     }

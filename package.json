@@ -1,7 +1,7 @@
 {
   "name": "t-core-ui",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Core UI components for t-css-framework",
   "repository": {
     "type": "git",
