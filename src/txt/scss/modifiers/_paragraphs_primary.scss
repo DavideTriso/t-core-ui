@@ -1,0 +1,75 @@
+#{$txtClassName}_primary {
+    p {
+        @include font($p_primary--font);
+        @include text($p_primary--text);
+        @include typography($p_primary--typography);
+        @include margin($p_primary--margin);
+        @include padding($p_primary--padding);
+    }
+    abbr {
+        @include font($abbr_primary--font);
+        @include text($abbr_primary--text);
+        @include typography($abbr_primary--typography);
+        @if ($abbr_primary--cursor !="") {
+            cursor: $abbr_primary--cursor;
+        }
+    }
+    blockquote {
+        @include font($blockquote_primary--font);
+        @include text($blockquote_primary--text);
+        @include typography($blockquote_primary--typography);
+        @include margin($blockquote_primary--margin);
+        @include padding($blockquote_primary--padding);
+        @include border($blockquote_primary--border);
+        @include background($blockquote_primary--border);
+    } //the title of a work
+    cite {
+        @include font($cite_primary--font);
+        @include text($cite_primary--text);
+    }
+    em {
+        @include font($em_primary--font);
+        @include text($em_primary--text);
+    }
+    i {
+        @include font($em_primary--font);
+        @include text($em_primary--text);
+    }
+    mark {
+        @include font($mark_primary--font);
+        @include text($mark_primary--text);
+        @include background($mark_primary--background);
+    } //short quotation
+    q {
+        @include font($q_primary--font);
+        @include text($q_primary--text);
+        &:after {
+            content: $q_primaryPafter--content;
+        }
+        &:before {
+            content: $q_primaryPbefore--content;
+        }
+    } //mark up text that is no longer correct
+    s {
+        @include font($s_primary--font);
+        @include text($s_primary--text);
+    }
+    strong {
+        @include font($strong_primary--font);
+        @include text($strong_primary--text);
+    }
+    sub {
+        @include font($sub_primary--font);
+        @include text($sub_primary--text);
+        @include typography($sub_primary--typography)
+    }
+    sup {
+        @include font($sup_primary--font);
+        @include text($sup_primary--text);
+        @include typography($sup_primary--typography)
+    }
+    time {
+        @include font($time_primary--font);
+        @include text($time_primary--text);
+    }
+}

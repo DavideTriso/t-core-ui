@@ -1,0 +1,19 @@
+#{$txtClassName}_primary {
+    ol {
+        @include list($ol_primary--list);
+        @include margin($ol_primary--margin);
+        @include padding($ol_primary--padding);
+    }
+    ul {
+        @include list($ul_primary--list);
+        @include margin($ul_primary--margin);
+        @include padding($ul_primary--padding);
+    }
+    li {
+        @include font($li_primary--font);
+        @include text($li_primary--text);
+        @include typography($li_primary--typography);
+        @include margin($li_primary--margin);
+        @include padding($li_primary--padding);
+    }
+}

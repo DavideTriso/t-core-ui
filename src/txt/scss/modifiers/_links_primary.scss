@@ -1,0 +1,23 @@
+#{$txtClassName}_primary {
+    a {
+        @include font($a_primary--font);
+        @include text($a_primary--text);
+        @include typography($a_primary--typography);
+        @include border($a_primary--border);
+        @include background($a_primary--background);
+        @include outline($a_primary--outline);
+        transition: $a_primary--transition;
+        &:active,
+        &:focus,
+        &:hover {
+            @include font($a_primaryPhover--font);
+            @include text($a_primaryPhover--text);
+            @include typography($a_primaryPhover--typography);
+            @include border($a_primaryPhover--border);
+            @include background($a_primaryPhover--background);
+        }
+        &:focus {
+            @include outline($a_primaryPfocus--outline);
+        }
+    }
+}

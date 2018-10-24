@@ -1,0 +1,14 @@
+#{$txtClassName}_primary {
+    @include font((fontSize: $txt_primaryFontSize));
+    line-height: $txt_primaryLineHeight;
+    @if $tabletMinWidth !='' {
+        @include mqMin($tabletMinWidth) {
+            @include font((fontSize: $tablet--txt_primaryFontSize));
+        }
+    }
+    @if $desktopMinWidth !='' {
+        @include mqMin($desktopMinWidth) {
+            @include font((fontSize: $desktop--txt_primaryFontSize));
+        }
+    }
+}

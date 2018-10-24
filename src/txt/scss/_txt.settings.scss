@@ -1,4 +1,4 @@
-$txtClassName: ".txt";
+$txtClassName: ".txt" !default;
 //the breakpoints
 $tabletMinWidth: 767px !default;
 $desktopMinWidth: 1200px !default;
@@ -6,15 +6,14 @@ $desktopMinWidth: 1200px !default;
 //because the font size of all the wrapper's children are defined in em,
 //the entire content will scale accordingly
 //To override this scaling behaviour for one element, use rem instead of em for it;s font-size
-$txtFontSize: 1rem;
-$txtLineHeight: 1.2;
-$tablet--txtFontSize: 1.05rem;
-$tablet--txtLineHeight: 1.2;
-$desktop--txtFontSize: 1.1rem;
+$txtFontSize: 1rem !default;
+$txtLineHeight: 1.2 !default;
+$tablet--txtFontSize: 1.05rem !default;
+$desktop--txtFontSize: 1.1rem !default;
 //HEADINGS
 //the fallback values are used when no specific value for the element is defined
 $h-fallback--font: () !default;
-$h-fallback--text: () !default;
+$h-fallback--text: (color: #000) !default;
 $h-fallback--typography: () !default;
 $h-fallback--border: () !default;
 $h-fallback--background: () !default;
@@ -89,7 +88,7 @@ $desktop--h6--font: () !default;
 //Use EM for font size, not rem
 //PARAGRAPHS
 $p--font: () !default;
-$p--text: () !default;
+$p--text: (color: #000) !default;
 $p--typography: () !default;
 $p--margin: () !default;
 $p--padding: () !default;
@@ -118,7 +117,7 @@ $i--text: () !default;
 //mark
 $mark--font: () !default;
 $mark--text: () !default;
-$mark--background: () !default;
+$mark--background: (backgroundColor: #eee239) !default;
 //q
 $q--font: () !default;
 $q--text: () !default;
@@ -143,7 +142,7 @@ $time--font: () !default;
 $time--text: () !default;
 //LINKS
 $a--font: () !default;
-$a--text: () !default;
+$a--text: (color: #238fe7) !default;
 $a--typography: () !default;
 $a--border: () !default;
 $a--background: () !default;
@@ -167,11 +166,341 @@ $li--text: () !default;
 $li--typography: () !default;
 $li--margin: () !default;
 $li--padding: () !default;
-//COLUMNS LAYOUT
-//breakpoints for columns layout
+//MODIFIERS
+//MULTI-COLUMNS LAYOUT
 $colsTabletMinWidth: 767px !default;
 $colsDesktopMinWidth: 1200px !default;
 $txt_twocol--width: 10rem !default;
 $txt_twocol--gap: 2rem !default;
 $txt_threecol--width: 8rem !default;
 $txt_threecol--gap: 2rem !default;
+//PRIMARY
+//different font sizes can be defined for the running text wrapper element.
+//because the font size of all the wrapper's children are defined in em,
+//the entire content will scale accordingly
+//To override this scaling behaviour for one element, use rem instead of em for it;s font-size
+$txt_primaryFontSize: 1rem !default;
+$txt_primaryLineHeight: 1.2 !default;
+$tablet--txt_primaryFontSize: 1.05rem !default;
+$desktop--txt_primaryFontSize: 1.1rem !default;
+//HEADINGS
+//the fallback values are used when no specific value for the element is defined
+$h_primary-fallback--font: () !default;
+$h_primary-fallback--text: (color: #fff) !default;
+$h_primary-fallback--typography: () !default;
+$h_primary-fallback--border: () !default;
+$h_primary-fallback--background: () !default;
+$h_primary-fallback--margin: () !default;
+$h_primary-fallback--padding: () !default;
+//H1
+$h1_primary--font: () !default;
+$h1_primary--text: () !default;
+$h1_primary--typography: () !default;
+$h1_primary--border: () !default;
+$h1_primary--background: () !default;
+$h1_primary--margin: () !default;
+$h1_primary--padding: () !default;
+//resp
+$tablet--h1_primary--font: () !default;
+$desktop--h1_primary--font: () !default;
+//H2
+$h2_primary--font: () !default;
+$h2_primary--text: () !default;
+$h2_primary--typography: () !default;
+$h2_primary--border: () !default;
+$h2_primary--background: () !default;
+$h2_primary--margin: () !default;
+$h2_primary--padding: () !default;
+//resp
+$tablet--h2_primary--font: () !default;
+$desktop--h2_primary--font: () !default;
+//H3
+$h3_primary--font: () !default;
+$h3_primary--text: () !default;
+$h3_primary--typography: () !default;
+$h3_primary--border: () !default;
+$h3_primary--background: () !default;
+$h3_primary--margin: () !default;
+$h3_primary--padding: () !default;
+//resp
+$tablet--h3_primary--font: () !default;
+$desktop--h3_primary--font: () !default;
+//H4
+$h4_primary--font: () !default;
+$h4_primary--text: () !default;
+$h4_primary--typography: () !default;
+$h4_primary--border: () !default;
+$h4_primary--background: () !default;
+$h4_primary--margin: () !default;
+$h4_primary--padding: () !default;
+//resp
+$tablet--h4_primary--font: () !default;
+$desktop--h4_primary--font: () !default;
+//H5
+$h5_primary--font: () !default;
+$h5_primary--text: () !default;
+$h5_primary--typography: () !default;
+$h5_primary--border: () !default;
+$h5_primary--background: () !default;
+$h5_primary--margin: () !default;
+$h5_primary--padding: () !default;
+//resp
+$tablet--h5_primary--font: () !default;
+$desktop--h5_primary--font: () !default;
+//H6
+$h6_primary--font: () !default;
+$h6_primary--text: () !default;
+$h6_primary--typography: () !default;
+$h6_primary--border: () !default;
+$h6_primary--background: () !default;
+$h6_primary--margin: () !default;
+$h6_primary--padding: () !default;
+//resp
+$tablet--h6_primary--font: () !default;
+$desktop--h6_primary--font: () !default;
+//Use EM for font size, not rem
+//PARAGRAPHS
+$p_primary--font: () !default;
+$p_primary--text: (color: #fff) !default;
+$p_primary--typography: () !default;
+$p_primary--margin: () !default;
+$p_primary--padding: () !default;
+//abbr
+$abbr_primary--font: () !default;
+$abbr_primary--text: () !default;
+$abbr_primary--typography: () !default;
+$abbr_primary--cursor: "" !default;
+//blockquote
+$blockquote_primary--font: () !default;
+$blockquote_primary--text: () !default;
+$blockquote_primary--typography: () !default;
+$blockquote_primary--margin: () !default;
+$blockquote_primary--padding: () !default;
+$blockquote_primary--border: () !default;
+$blockquote_primary--background: () !default;
+//cite
+$cite_primary--font: () !default;
+$cite_primary--text: () !default;
+//em
+$em_primary--font: () !default;
+$em_primary--text: () !default;
+//i
+$i_primary--font: () !default;
+$i_primary--text: () !default;
+//mark
+$mark_primary--font: () !default;
+$mark_primary--text: () !default;
+$mark_primary--background: () !default;
+//q
+$q_primary--font: () !default;
+$q_primary--text: () !default;
+$q_primaryPafter--content: none !default;
+$q_primaryPbefore--content: none !default;
+//s
+$s_primary--font: () !default;
+$s_primary--text: () !default;
+//strong
+$strong_primary--font: () !default;
+$strong_primary--text: () !default;
+//sub
+$sub_primary--font: () !default;
+$sub_primary--text: () !default;
+$sub_primary--typography: () !default;
+//sup
+$sup_primary--font: () !default;
+$sup_primary--text: () !default;
+$sup_primary--typography: () !default;
+//time
+$time_primary--font: () !default;
+$time_primary--text: () !default;
+//LINKS
+$a_primary--font: () !default;
+$a_primary--text: (color: #d6d6d6) !default;
+$a_primary--typography: () !default;
+$a_primary--border: () !default;
+$a_primary--background: () !default;
+$a_primary--outline: () !default;
+$a_primary--transition: "" !default;
+$a_primaryPhover--font: () !default;
+$a_primaryPhover--text: () !default;
+$a_primaryPhover--typography: () !default;
+$a_primaryPhover--border: () !default;
+$a_primaryPhover--background: () !default;
+$a_primaryPfocus--outline: () !default;
+//LISTS
+$ul_primary--list: () !default;
+$ul_primary--margin: () !default;
+$ul_primary--padding: () !default;
+$ol_primary--list: () !default;
+$ol_primary--margin: () !default;
+$ol_primary--padding: () !default;
+$li_primary--font: () !default;
+$li_primary--text: () !default;
+$li_primary--typography: () !default;
+$li_primary--margin: () !default;
+$li_primary--padding: () !default;
+//SECONDARY
+//different font sizes can be defined for the running text wrapper element.
+//because the font size of all the wrapper's children are defined in em,
+//the entire content will scale accordingly
+//To override this scaling behaviour for one element, use rem instead of em for it;s font-size
+$txt_secondaryFontSize: 1rem !default;
+$txt_secondaryLineHeight: 1.2 !default;
+$tablet--txt_secondaryFontSize: 1.05rem !default;
+$desktop--txt_secondaryFontSize: 1.1rem !default;
+//HEADINGS
+//the fallback values are used when no specific value for the element is defined
+$h_secondary-fallback--font: () !default;
+$h_secondary-fallback--text: () !default;
+$h_secondary-fallback--typography: () !default;
+$h_secondary-fallback--border: () !default;
+$h_secondary-fallback--background: () !default;
+$h_secondary-fallback--margin: () !default;
+$h_secondary-fallback--padding: () !default;
+//H1
+$h1_secondary--font: () !default;
+$h1_secondary--text: () !default;
+$h1_secondary--typography: () !default;
+$h1_secondary--border: () !default;
+$h1_secondary--background: () !default;
+$h1_secondary--margin: () !default;
+$h1_secondary--padding: () !default;
+//resp
+$tablet--h1_secondary--font: () !default;
+$desktop--h1_secondary--font: () !default;
+//H2
+$h2_secondary--font: () !default;
+$h2_secondary--text: () !default;
+$h2_secondary--typography: () !default;
+$h2_secondary--border: () !default;
+$h2_secondary--background: () !default;
+$h2_secondary--margin: () !default;
+$h2_secondary--padding: () !default;
+//resp
+$tablet--h2_secondary--font: () !default;
+$desktop--h2_secondary--font: () !default;
+//H3
+$h3_secondary--font: () !default;
+$h3_secondary--text: () !default;
+$h3_secondary--typography: () !default;
+$h3_secondary--border: () !default;
+$h3_secondary--background: () !default;
+$h3_secondary--margin: () !default;
+$h3_secondary--padding: () !default;
+//resp
+$tablet--h3_secondary--font: () !default;
+$desktop--h3_secondary--font: () !default;
+//H4
+$h4_secondary--font: () !default;
+$h4_secondary--text: () !default;
+$h4_secondary--typography: () !default;
+$h4_secondary--border: () !default;
+$h4_secondary--background: () !default;
+$h4_secondary--margin: () !default;
+$h4_secondary--padding: () !default;
+//resp
+$tablet--h4_secondary--font: () !default;
+$desktop--h4_secondary--font: () !default;
+//H5
+$h5_secondary--font: () !default;
+$h5_secondary--text: () !default;
+$h5_secondary--typography: () !default;
+$h5_secondary--border: () !default;
+$h5_secondary--background: () !default;
+$h5_secondary--margin: () !default;
+$h5_secondary--padding: () !default;
+//resp
+$tablet--h5_secondary--font: () !default;
+$desktop--h5_secondary--font: () !default;
+//H6
+$h6_secondary--font: () !default;
+$h6_secondary--text: () !default;
+$h6_secondary--typography: () !default;
+$h6_secondary--border: () !default;
+$h6_secondary--background: () !default;
+$h6_secondary--margin: () !default;
+$h6_secondary--padding: () !default;
+//resp
+$tablet--h6_secondary--font: () !default;
+$desktop--h6_secondary--font: () !default;
+//Use EM for font size, not rem
+//PARAGRAPHS
+$p_secondary--font: () !default;
+$p_secondary--text: () !default;
+$p_secondary--typography: () !default;
+$p_secondary--margin: () !default;
+$p_secondary--padding: () !default;
+//abbr
+$abbr_secondary--font: () !default;
+$abbr_secondary--text: () !default;
+$abbr_secondary--typography: () !default;
+$abbr_secondary--cursor: "" !default;
+//blockquote
+$blockquote_secondary--font: () !default;
+$blockquote_secondary--text: () !default;
+$blockquote_secondary--typography: () !default;
+$blockquote_secondary--margin: () !default;
+$blockquote_secondary--padding: () !default;
+$blockquote_secondary--border: () !default;
+$blockquote_secondary--background: () !default;
+//cite
+$cite_secondary--font: () !default;
+$cite_secondary--text: () !default;
+//em
+$em_secondary--font: () !default;
+$em_secondary--text: () !default;
+//i
+$i_secondary--font: () !default;
+$i_secondary--text: () !default;
+//mark
+$mark_secondary--font: () !default;
+$mark_secondary--text: () !default;
+$mark_secondary--background: () !default;
+//q
+$q_secondary--font: () !default;
+$q_secondary--text: () !default;
+$q_secondaryPafter--content: none !default;
+$q_secondaryPbefore--content: none !default;
+//s
+$s_secondary--font: () !default;
+$s_secondary--text: () !default;
+//strong
+$strong_secondary--font: () !default;
+$strong_secondary--text: () !default;
+//sub
+$sub_secondary--font: () !default;
+$sub_secondary--text: () !default;
+$sub_secondary--typography: () !default;
+//sup
+$sup_secondary--font: () !default;
+$sup_secondary--text: () !default;
+$sup_secondary--typography: () !default;
+//time
+$time_secondary--font: () !default;
+$time_secondary--text: () !default;
+//LINKS
+$a_secondary--font: () !default;
+$a_secondary--text: () !default;
+$a_secondary--typography: () !default;
+$a_secondary--border: () !default;
+$a_secondary--background: () !default;
+$a_secondary--outline: () !default;
+$a_secondary--transition: none !default;
+$a_secondaryPhover--font: () !default;
+$a_secondaryPhover--text: () !default;
+$a_secondaryPhover--typography: () !default;
+$a_secondaryPhover--border: () !default;
+$a_secondaryPhover--background: () !default;
+$a_secondaryPfocus--outline: () !default;
+//LISTS
+$ul_secondary--list: () !default;
+$ul_secondary--margin: () !default;
+$ul_secondary--padding: () !default;
+$ol_secondary--list: () !default;
+$ol_secondary--margin: () !default;
+$ol_secondary--padding: () !default;
+$li_secondary--font: () !default;
+$li_secondary--text: () !default;
+$li_secondary--typography: () !default;
+$li_secondary--margin: () !default;
+$li_secondary--padding: () !default;

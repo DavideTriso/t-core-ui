@@ -1,0 +1,130 @@
+#{$txtClassName}_secondary {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @include font($h_secondary-fallback--font);
+        @include text($h_secondary-fallback--text);
+        @include typography($h_secondary-fallback--typography);
+        @include border($h_secondary-fallback--border);
+        @include background($h_secondary-fallback--background);
+        @include margin($h_secondary-fallback--margin);
+        @include padding($h_secondary-fallback--padding);
+    }
+    h1 {
+        @include font($h1_secondary--font);
+        @include text($h1_secondary--text);
+        @include typography($h1_secondary--typography);
+        @include border($h1_secondary--border);
+        @include background($h1_secondary--background);
+        @include margin($h1_secondary--margin);
+        @include padding($h1_secondary--padding);
+        @if $tabletMinWidth !='' {
+            @include mqMin($tabletMinWidth) {
+                @include font($tablet--h1_secondary--font);
+            }
+        }
+        @if $desktopMinWidth !='' {
+            @include mqMin($desktopMinWidth) {
+                @include font($desktop--h1_secondary--font);
+            }
+        }
+    }
+    h2 {
+        @include font($h2_secondary--font);
+        @include text($h2_secondary--text);
+        @include typography($h2_secondary--typography);
+        @include border($h2_secondary--border);
+        @include background($h2_secondary--background);
+        @include margin($h2_secondary--margin);
+        @include padding($h2_secondary--padding);
+        @if $tabletMinWidth !='' {
+            @include mqMin($tabletMinWidth) {
+                @include font($tablet--h2_secondary--font);
+            }
+        }
+        @if $desktopMinWidth !='' {
+            @include mqMin($desktopMinWidth) {
+                @include font($desktop--h2_secondary--font);
+            }
+        }
+    }
+    h3 {
+        @include font($h3_secondary--font);
+        @include text($h3_secondary--text);
+        @include typography($h3_secondary--typography);
+        @include border($h3_secondary--border);
+        @include background($h3_secondary--background);
+        @include margin($h3_secondary--margin);
+        @include padding($h3_secondary--padding);
+        @if $tabletMinWidth !='' {
+            @include mqMin($tabletMinWidth) {
+                @include font($tablet--h3_secondary--font);
+            }
+        }
+        @if $desktopMinWidth !='' {
+            @include mqMin($desktopMinWidth) {
+                @include font($desktop--h3_secondary--font);
+            }
+        }
+    }
+    h4 {
+        @include font($h4_secondary--font);
+        @include text($h4_secondary--text);
+        @include typography($h4_secondary--typography);
+        @include border($h4_secondary--border);
+        @include background($h4_secondary--background);
+        @include margin($h4_secondary--margin);
+        @include padding($h4_secondary--padding);
+        @if $tabletMinWidth !='' {
+            @include mqMin($tabletMinWidth) {
+                @include font($tablet--h4_secondary--font);
+            }
+        }
+        @if $desktopMinWidth !='' {
+            @include mqMin($desktopMinWidth) {
+                @include font($desktop--h4_secondary--font);
+            }
+        }
+    }
+    h5 {
+        @include font($h5_secondary--font);
+        @include text($h5_secondary--text);
+        @include typography($h5_secondary--typography);
+        @include border($h5_secondary--border);
+        @include background($h5_secondary--background);
+        @include margin($h5_secondary--margin);
+        @include padding($h5_secondary--padding);
+        @if $tabletMinWidth !='' {
+            @include mqMin($tabletMinWidth) {
+                @include font($tablet--h5_secondary--font);
+            }
+        }
+        @if $desktopMinWidth !='' {
+            @include mqMin($desktopMinWidth) {
+                @include font($desktop--h5_secondary--font);
+            }
+        }
+    }
+    h6 {
+        @include font($h6_secondary--font);
+        @include text($h6_secondary--text);
+        @include typography($h6_secondary--typography);
+        @include border($h6_secondary--border);
+        @include background($h6_secondary--background);
+        @include margin($h6_secondary--margin);
+        @include padding($h6_secondary--padding);
+        @if $tabletMinWidth !='' {
+            @include mqMin($tabletMinWidth) {
+                @include font($tablet--h6_secondary--font);
+            }
+        }
+        @if $desktopMinWidth !='' {
+            @include mqMin($desktopMinWidth) {
+                @include font($desktop--h6_secondary--font);
+            }
+        }
+    }
+}

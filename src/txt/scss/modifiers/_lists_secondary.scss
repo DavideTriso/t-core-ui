@@ -1,0 +1,19 @@
+#{$txtClassName}_secondary {
+    ol {
+        @include list($ol_secondary--list);
+        @include margin($ol_secondary--margin);
+        @include padding($ol_secondary--padding);
+    }
+    ul {
+        @include list($ul_secondary--list);
+        @include margin($ul_secondary--margin);
+        @include padding($ul_secondary--padding);
+    }
+    li {
+        @include font($li_secondary--font);
+        @include text($li_secondary--text);
+        @include typography($li_secondary--typography);
+        @include margin($li_secondary--margin);
+        @include padding($li_secondary--padding);
+    }
+}

@@ -6,6 +6,7 @@
         margin-top: 0;
     }
     @include font((fontSize: $txtFontSize));
+    line-height: $txtLineHeight;
     @if $tabletMinWidth !='' {
         @include mqMin($tabletMinWidth) {
             @include font((fontSize: $tablet--txtFontSize));

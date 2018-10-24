@@ -4,6 +4,16 @@
 @import "links";
 @import "lists";
 @import "paragraphs";
-@import "tables";
+//modifiers
+@import "modifiers/txt_primary";
+@import "modifiers/headings_primary";
+@import "modifiers/links_primary";
+@import "modifiers/lists_primary";
+@import "modifiers/paragraphs_primary";
+//@import "modifiers/txt_secondary";
+//@import "modifiers/headings_secondary";
+//@import "modifiers/links_secondary";
+//@import "modifiers/lists_secondary";
+//@import "modifiers/paragraphs_secondary";
 @import "modifiers/txt_twocol";
 @import "modifiers/txt_threecol";

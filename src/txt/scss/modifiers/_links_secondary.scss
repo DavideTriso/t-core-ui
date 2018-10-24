@@ -1,0 +1,23 @@
+#{$txtClassName}_secondary {
+    a {
+        @include font($a_secondary--font);
+        @include text($a_secondary--text);
+        @include typography($a_secondary--typography);
+        @include border($a_secondary--border);
+        @include background($a_secondary--background);
+        @include outline($a_secondary--outline);
+        transition: $a_secondary--transition;
+        &:active,
+        &:focus,
+        &:hover {
+            @include font($a_secondaryPhover--font);
+            @include text($a_secondaryPhover--text);
+            @include typography($a_secondaryPhover--typography);
+            @include border($a_secondaryPhover--border);
+            @include background($a_secondaryPhover--background);
+        }
+        &:focus {
+            @include outline($a_secondaryPfocus--outline);
+        }
+    }
+}
