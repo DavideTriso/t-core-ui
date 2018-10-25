@@ -3,7 +3,7 @@
   @include padding($well--padding);
   @include border($well--border);
   @include background($well--background);
-
+  @include sizes($well--sizes);
   @if $well--box-shadow != "" {
     box-shadow: $well--box-shadow;
   }
