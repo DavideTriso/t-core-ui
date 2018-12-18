@@ -273,3 +273,16 @@ $btn_busy--loader: (
   speed         : 1s
 )
 !default;
+
+
+//Icon
+$btn_icon--sizes: (
+    minWidth: 3rem,
+    width: 3rem
+)
+!default;
+
+$btn_icon--padding: (
+    all: 0.4rem
+)
+!default;
