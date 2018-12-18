@@ -1,6 +1,5 @@
 .btn {
-  display: inline-flex;
-  @include flexPositioning($btn--flexPositioning);
+  display: inline-block;
   @include font($btn--font);
   @include text($btn--text);
   @include typography($btn--typography);
