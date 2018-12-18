@@ -10,6 +10,8 @@
 
   .btn__loader {
     position: absolute;
+    top: calc(50% - map-get($btn_busy--loader, size) / 2);
+    left: calc(50% - map-get($btn_busy--loader, size) / 2);
     @include loader($btn_busy--loader);
   }
 }
